@@ -8,14 +8,20 @@ This repository will be set as my library for updating all of what I want to lea
 
 ### Basic of Kubernetes (K8s)
 
-I need to know the basics of Kubernetes to help me communicate with the SRE or DevOps team. So I can describe what I need and what they need to do when we try to deploy my services. That is the reason why I am learning this.
-
 #### Overview
 
-Kubernetes is orchestration 
+I need to know the basics of Kubernetes to help me communicate with the SRE or DevOps team. So I can describe what I need and what they need to do when we try to deploy my services. That is the reason why I am learning this.
+
+#### What are Kubernetes?
+
+Kubernetes is orchestration ...
 
 ## 👀️ What I want to learn
 
-### Design Pattern (Cooming soon)
+### Design Pattern
+
+#### Overview
+
+#### What are Design Pattern?
 
 ### SOLID Definition
