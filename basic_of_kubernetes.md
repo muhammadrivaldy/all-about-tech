@@ -12,4 +12,4 @@ And, in 2014 Google teams state the project Kubernetes will be set as Open sourc
 
 ### Traditional Deployment
 
-> We don't have any mechanism for creating a bondaries between application inside of physical server. This approach raises a new problem, the problem appear because the servhce have many applications there. So, when one application used many resources in that server, another application will get impacted because they don't have a capable resource.
+We don't have any mechanism for creating a bondaries between application inside of physical server. This approach raises a new problem, the problem appear because the servhce have many applications there. So, when one application used many resources in that server, another application will get impacted because they don't have a capable resource.
