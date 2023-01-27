@@ -14,7 +14,9 @@ So, let's start the thread! 🚀️
 
 #### Overview
 
-I need to know the basics of Kubernetes to help me communicate with the SRE or DevOps team. So I can describe what I need and what they need to do when we try to deploy my services. That is the reason why I am learning this.
+Kubernetes, called K8s is a platform open source for automation deployment, scaling and managing many containers. K8s is an abbreviation of "Kubernetes" in which "ubernete" are replaced by "8".
+
+And, in 2014 Google teams state the project Kubernetes will be set as Open source.
 
 ## 🍃️ What I want to learn
 
