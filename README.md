@@ -10,7 +10,7 @@ So, let's start the thread! 🚀️
 
 ## 🧠️ What I learned
 
-### Basic of Kubernetes (K8s) ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
+### [Basic of Kubernetes (K8s)](./basic_of_kubernetes.md) ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
 
 #### Overview
 
