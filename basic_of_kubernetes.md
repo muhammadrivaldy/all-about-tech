@@ -5,7 +5,7 @@
 
 Kubernetes, called K8s is a platform open source for automation deployment, scaling and managing many containers. K8s is an abbreviation of "Kubernetes" in which "ubernete" are replaced by "8".
 
-And, in 2014 Google teams state the project Kubernetes will be set as Open source.
+In 2014 Google teams state the project Kubernetes will be set as Open source.
 
 ## Let's throwback
 
