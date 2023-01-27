@@ -10,19 +10,15 @@ So, let's start the thread! 🚀️
 
 ## 🧠️ What I learned
 
-### Basic of Kubernetes (K8s) (Still In Progress ⌨️)
+### Basic of Kubernetes (K8s) ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
 
 #### Overview
 
 I need to know the basics of Kubernetes to help me communicate with the SRE or DevOps team. So I can describe what I need and what they need to do when we try to deploy my services. That is the reason why I am learning this.
 
-#### What are Kubernetes?
+## 🍃️ What I want to learn
 
-Kubernetes is orchestration ...
-
-## 👀️ What I want to learn
-
-### Design Pattern (Cooming Soon ⏲️)
+### Design Pattern ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -30,7 +26,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### SOLID Definition (Cooming Soon ⏲️)
+### SOLID Definition ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -38,7 +34,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### DDD in Programming (Cooming Soon ⏲️)
+### DDD in Programming ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -46,7 +42,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### Time Complexity (Cooming Soon ⏲️)
+### Time Complexity ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -54,7 +50,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### Clean Code (Cooming Soon ⏲️)
+### Clean Code ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -62,7 +58,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### Software Design (Cooming Soon ⏲️)
+### Software Design ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -70,7 +66,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### C4 Model (Cooming Soon ⏲️)
+### C4 Model ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -78,7 +74,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### Clean Architecture (Cooming Soon ⏲️)
+### Clean Architecture ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -86,7 +82,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### Code Smell (Cooming Soon ⏲️)
+### Code Smell ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -94,7 +90,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### Database Types (Cooming Soon ⏲️)
+### Database Types ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -102,7 +98,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### Vertical & Horizontal Scalling (Cooming Soon ⏲️)
+### Vertical & Horizontal Scalling ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -110,7 +106,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### GrapQL with Golang (Cooming Soon ⏲️)
+### GrapQL with Golang ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
@@ -118,7 +114,7 @@ Kubernetes is orchestration ...
 
 ---
 
-### gRPC with Golang (Cooming Soon ⏲️)
+### gRPC with Golang ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
