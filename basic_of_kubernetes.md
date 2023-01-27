@@ -1,4 +1,5 @@
 # Basic of Kubernetes (K8s)
+![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
 
 ## Overview
 
