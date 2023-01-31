@@ -21,4 +21,8 @@ With this mechanism, we can solve the issue from traditional deployment. Why? Be
 
 ### Container Deployment
 
-If you have many applications on your server, it will take a long time to maintain, deploy, and monitor all of your applications one by one. With container deployment, they will help you to maintain, deploy, and monitor easily helped by a system. Because of that, Kubernetes was born! 😄️ Kubernetes will help you with their framework for maintaining etc your applications easily with smaller mistakes.
+The mechanism of this initiative is really similar to virtualized deployment. But, Kubernetes more excellence rather than virtualized. Kubernetes is better at doing isolation applications because of that the containers are lighter than VM.
+
+## Why used Kubernetes?
+
+If you have many applications on your server, it will take a long time to maintain, deploy, and monitor all of your applications one by one. With Kubernetes, they will help you to maintain, deploy, and monitor easily helped by a system. Because of that, Kubernetes was born! 😄️ Kubernetes will help you with their framework for maintaining etc your applications easily with smaller mistakes.
