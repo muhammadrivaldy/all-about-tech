@@ -25,7 +25,9 @@ In 2014 Google teams state the project Kubernetes will be set as Open source.
 
 ### Why used Kubernetes?
 
-If you have many applications on your server, it will take a long time to maintain, deploy, and monitor all of your applications one by one. With Kubernetes, they will help you to maintain, deploy, and monitor easily helped by a system. Because of that, Kubernetes was born! 😄️ Kubernetes will help you with their framework for maintaining etc your applications easily with smaller mistakes.
+If you have many applications on your server, it will take a long time to maintain, deploy, and monitor all of your applications one by one. With Kubernetes, they will help you to maintain, deploy, and monitor easily helped by a system. Because of that, Kubernetes was born! 😄️
+
+Kubernetes will help you with their framework for maintaining etc your applications easily with smaller mistakes.
 
 ## Kubernetes
 
