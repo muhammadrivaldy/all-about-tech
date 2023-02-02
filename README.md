@@ -18,15 +18,14 @@ Kubernetes, called K8s is a platform open source for automation deployment, scal
 
 In 2014 Google teams state the project Kubernetes will be set as Open source.
 
-## 🍃️ What I want to share or learn
+---
 
-### Design Pattern ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Design Pattern ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
 
 #### Overview
+In progress ...
 
-#### What is Design Pattern?
-
----
+## 🍃️ What I want to share or learn
 
 ### SOLID Definition ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
