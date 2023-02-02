@@ -60,7 +60,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   Creating a node on Kubernetes will depend on the cloud server that we use. The way to create a node on GKE & Amazon EKS will be different. But, in the learning case, we are able to create a node with a Kubernetes object. Please remind in your mind, this is not the best way to do it.
 
-  This is the example if you wanna try it in your local environment:
+  Example of Kubernetes object for nodes:
 
   ```
   apiVersion: v1
@@ -74,7 +74,22 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
 * #### Pods
 
+  The pod is the smallest that we are able to deploy and manage inside Kubernetes. We can run one or more containers in one pod with sharing resources.
 
+  Example of Kubernetes object for pods:
+  
+  ```
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: nginx
+  spec:
+    containers:
+    - name: nginx
+      image: nginx:1.14.2
+      ports:
+      - containerPort: 80
+  ```
 
 * Deployment
 * Service
