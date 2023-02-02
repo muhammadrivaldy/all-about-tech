@@ -30,8 +30,14 @@ If you have many applications on your server, it will take a long time to mainta
 ## Kubernetes
 
 ### Kubernetes Component
+When we install Kubernetes, we will get a cluster automatically. In a Kubernetes cluster, you will found several worker machines (called nodes) that running the container. Every cluster at least has one node.
+
+Worker nodes host the pods that are the components of the workload. While the control plant will be responsible to manage nodes & pods.
 
 ### Kubernetes API
+The main function of the Kubernetes control plant is the API server. The API server will connect the user, every single part of the cluster & the external components can be able to connect with each other. In many cases, you can do an operation with tools like kubectl or kubeadm. Basically, the tools will be generating your request in API format and send it to Kubernetes.
+
+You also be able to request the operation directly with API through REST calls.
 
 ### Kubernetes Object
 
