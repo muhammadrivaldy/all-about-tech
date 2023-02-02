@@ -10,9 +10,57 @@ Design pattern is a solution to solving a common problem in software design. It'
 
 Design patterns will help you and your team to develop good code and you can know the code from your teammates easily. This approach will help you to create a code that is maintainable and upgradeable.
 
-## Various of Design Patterns
+## Various of Design Pattern
 
-### 
+### Creational Pattern
+
+* #### Factory Method
+
+* #### Abstract Factory
+
+* #### Builder
+
+* #### Prototype
+
+* #### Singleton
+
+### Structural Pattern
+
+* #### Adapter
+
+* #### Bridge
+
+* #### Composite
+
+* #### Decorator
+
+* #### Facade
+
+* #### Flyweight
+
+* #### Proxy
+
+### Behavioral Pattern
+
+* #### Chain of Responsibility
+
+* #### Command
+
+* #### Iterator
+
+* #### Mediator
+
+* #### Memento
+
+* #### Observer
+
+* #### State
+
+* #### Strategy
+
+* #### Template Method
+
+* #### Visitor
 
 ## Reference
 
