@@ -60,7 +60,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   Creating a node on Kubernetes will depend on the cloud server that we use. The way to create a node on GKE & Amazon EKS will be different. But, in the learning case, we are able to create a node with a Kubernetes object. Please remind in your mind, this is not the best way to do it.
 
-  Example of Kubernetes object for nodes:
+  Example a Kubernetes object of nodes:
 
   ```
   apiVersion: v1
@@ -76,7 +76,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   The pod is the smallest that we are able to deploy and manage inside Kubernetes. We can run one or more containers in one pod with sharing resources.
 
-  Example of Kubernetes object for pods:
+  Example a Kubernetes object of pods:
   
   ```
   apiVersion: v1
@@ -91,12 +91,69 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
       - containerPort: 80
   ```
 
-* Deployment
-* Service
-* Ingress
-* Volumes, Persistent Volumes & Persistent Volumes Claim
-* Config Maps
-* Screts
+* #### Deployments
+
+  Deployment gives a declarative update to the pod and the replica set. Basically, to create and run a pod only needs a "pod object" and if we want to create a replica for a pod we are able to use a "replica set object".
+
+  So, why do we need a "deployment object"? The answer is because "deployment object" has several excellent features that easier the process development, among others:
+
+  - Rolling update
+  - Rollback a deployment
+  - Scaling a deployment
+  - Pausing and resuming a rollout
+
+  Example a Kubernetes object of deployments:
+
+  ```
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: nginx-deployment
+    labels:
+      app: nginx
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        app: nginx
+    template:
+      metadata:
+        labels:
+          app: nginx
+      spec:
+        containers:
+        - name: nginx
+          image: nginx:1.14.2
+          ports:
+          - containerPort: 80
+  ```
+
+* #### Service
+
+  Service is used to expose the pod to be able to access with certain conditions (usually that pattern called microservice). Kubernetes will give an IP Address and a single DNS.
+
+  Why do we need a service? Because it's important if we want to set a replica of the pod. So, if other pods want to access a pod, they can access it from DNS that it has. And, service will share the request with a load balancing feature.
+
+  Example a Kubernetes object of service:
+
+  ```
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: my-service
+  spec:
+    selector:
+      app.kubernetes.io/name: MyApp
+    ports:
+      - protocol: TCP
+        port: 80
+        targetPort: 9376
+  ```
+
+* #### Ingress
+* #### Volumes, Persistent Volumes & Persistent Volumes Claim
+* #### Config Maps
+* #### Screts
 
 ## Reference
 
