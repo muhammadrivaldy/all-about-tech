@@ -23,7 +23,8 @@ In 2014 Google teams state the project Kubernetes will be set as Open source.
 ### [Design Pattern](./design_pattern.md) ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
 
 #### Overview
-In progress ...
+
+Design pattern is a solution to solving a common problem in software design. It's not only to solve one case, design patterns are coverage many cases in software design. You can use it as a blueprint, so it will be helping you to develop your code with a pattern. Design patterns are concepts, you cannot copy them into your program without an adjustment.
 
 ## 🍃️ What I want to share or learn
 
