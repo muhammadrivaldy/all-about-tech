@@ -151,7 +151,94 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
   ```
 
 * #### Ingress
+
+  Ingress has a special job to manage access from outside to service in a cluster. Traffic routing is controlled with a policy from the ingress object.
+
+  This is how the system looks like:
+
+  ![](https://www.spectrocloud.com/static/f5c9c043a2705d286584c0c03d42bf51/5ca22/73-image1.png)
+
+  Example a Kubernetes object of ingress:
+
+  ```
+  apiVersion: networking.k8s.io/v1
+  kind: Ingress
+  metadata:
+    name: minimal-ingress
+    annotations:
+      nginx.ingress.kubernetes.io/rewrite-target: /
+  spec:
+    ingressClassName: nginx-example
+    rules:
+    - http:
+        paths:
+        - path: /testpath
+          pathType: Prefix
+          backend:
+            service:
+              name: test
+              port:
+                number: 80
+  ```
+
 * #### Volumes, Persistent Volumes & Persistent Volumes Claim
+
+  Basically, they have a relation each other. Why?
+
+  Because volume is used for connecting storage with a container inside of the pod. So, the container can save and read all files or folders that are connected. If we don't use persistent volume, the volume will be saved at the pod level.
+
+  Persistent volume is a mechanism to save data permanently. So, the data will be safe if we have some failures at a pod that causes the pod to get restarted. Because persistent volume will save the data at the cluster level.
+
+  Persistent volume claim is used by a pod to request some resource to persistent volume. So, a pod will have storage that aligns with the pod needed.
+
+  ![](https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/05/1_keV2VBkCHb7cn_Rib0huYg.png?fit=810%2C516&ssl=1)
+
+  Example of Kubernetes object volume, persistent volume, & persistent volume claim:
+
+  ```
+  apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    name: my-pv
+  spec:
+    capacity:
+      storage: 1Gi
+    accessModes:
+      - ReadWriteOnce
+    persistentVolumeReclaimPolicy: Retain
+    storageClassName: standard
+    hostPath:
+      path: "/data"
+  ---
+  apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: my-pvc
+  spec:
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: 1Gi
+    storageClassName: standard
+  ---
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: my-pod
+  spec:
+    containers:
+      - name: my-container
+        image: nginx
+        volumeMounts:
+          - mountPath: "/data"
+            name: my-volume
+    volumes:
+      - name: my-volume
+        persistentVolumeClaim:
+          claimName: my-pvc
+  ```
+
 * #### Config Maps
 * #### Screts
 
