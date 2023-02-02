@@ -16,6 +16,10 @@ Design patterns will help you and your team to develop good code and you can kno
 
 * #### Factory Method
 
+  ![](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
+
+  The factory method declared the interface, and then the interface will be represented by the child classes. So, with this pattern, we can create an object with two or more different behavior with the same function.
+
 * #### Abstract Factory
 
 * #### Builder
