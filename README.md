@@ -1,8 +1,8 @@
-# Learn Tech
+# All About Tech
 
 Hi folks 👋️
 
-Learn tech is a repository that I have to showing what I learned and what I want to learn in near future. Hopefully, it can be help us to learn something new easily rather than reading without any example of code. With Github, I can put more code and more example for us to getting more better context about the topic.
+All About Tech is a repository that I have to showing what I learned and what I want to learn in near future. Hopefully, it can be help us to learn something new easily rather than reading without any example of code. With Github, I can put more code and more example for us to getting more better context about the topic.
 
 Like the title of the repository, the topic will around tech especially in the back end side. Why I created in repository? Because it's more easier to maintenance and grouping. Other people can contribute as well 😄️
 
