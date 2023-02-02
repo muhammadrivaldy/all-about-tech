@@ -1,6 +1,6 @@
 # Basic of Kubernetes (K8s)
 
-![](https://badgen.net/badge/status/completed/green) ![](https://badgen.net/badge/version/v0.0.1/cyan)
+![](https://badgen.net/badge/status/completed/green) ![](https://badgen.net/badge/version/v1.0.0/cyan)
 
 ## Overview
 
