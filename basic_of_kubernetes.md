@@ -1,4 +1,5 @@
 # Basic of Kubernetes (K8s)
+
 ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
 
 ## Overview
@@ -32,19 +33,49 @@ Kubernetes will help you with their framework for maintaining etc your applicati
 ## Kubernetes
 
 ### Kubernetes Component
+
 When we install Kubernetes, we will get a cluster automatically. In a Kubernetes cluster, you will found several worker machines (called nodes) that running the container. Every cluster at least has one node.
 
 Worker nodes host the pods that are the components of the workload. While the control plant will be responsible to manage nodes & pods.
 
 ### Kubernetes API
+
 The main function of the Kubernetes control plant is the API server. The API server will connect the user, every single part of the cluster & the external components can be able to connect with each other. In many cases, you can do an operation with tools like kubectl or kubeadm. Basically, the tools will be generating your request in API format and send it to Kubernetes.
 
 You also be able to request the operation directly with API through REST calls.
 
 ### Kubernetes Object
 
-* Nodes
-* Pods
+Kubernetes objects are persistent entities in the Kubernetes system. Kubernetes used that entities for mapping out the cluster situation. Especially, Kubernetes will map outs:
+
+* What application (container) are running and on which nodes.
+* Resources are available for those applications.
+* Policy on how the app behaves. Like how the restart policy, upgrades, and fault tolerance.
+
+If you wanna work with Kubernetes objects (for creating, modifying, or deleting) we must use Kubernetes API. To use it, we can use Kubectl or direct requests with REST API.
+
+* #### Nodes
+
+  Nodes represent the virtual machine inside the cluster. Every node will manage by the control plane and inside of the nodes it has many tools that we need to run the pods. In the real case, we are able to have more than one node in the cluster. Usually, for learning cases, we only have one node in the cluster.
+
+  Creating a node on Kubernetes will depend on the cloud server that we use. The way to create a node on GKE & Amazon EKS will be different. But, in the learning case, we are able to create a node with a Kubernetes object. Please remind in your mind, this is not the best way to do it.
+
+  This is the example if you wanna try it in your local environment:
+
+  ```
+  apiVersion: v1
+  kind: Node
+  metadata:
+    name: node-example
+  spec:
+    podCIDR: 10.200.0.0/16
+    externalID: node-example-id
+  ```
+
+* #### Pods
+
+
+
 * Deployment
 * Service
 * Ingress
