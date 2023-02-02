@@ -193,7 +193,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   ![](https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/05/1_keV2VBkCHb7cn_Rib0huYg.png?fit=810%2C516&ssl=1)
 
-  Example of Kubernetes object volume, persistent volume, & persistent volume claim:
+  Example a Kubernetes object of volume, persistent volume, & persistent volume claim:
 
   ```
   apiVersion: v1
@@ -240,7 +240,37 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
   ```
 
 * #### Config Maps
+
+  Config map is used to save data config that is non-confidential with a format key-value. The pod is able to get the data config as an environment variable, command-line argument, or configuration file inside of volume.
+
+  Example a Kubernetes object of config map:
+
+  ```
+  apiVersion: v1
+  kind: ConfigMap
+  metadata:
+    name: game-demo
+  data:
+    player_initial_lives: "3"
+    ui_properties_file_name: "user-interface.properties"
+  ```
+
 * #### Screts
+
+  The secret has similar behavior to config map. The difference is only in the goals. The secret will use for confidential data, like a password or secret key.
+
+  Example a Kubernetes object of secret:
+
+  ```
+  apiVersion: v1
+  kind: Secret
+  metadata:
+    name: my-secret
+  type: Opaque
+  data:
+    username: YWRtaW4=
+    password: MWYyZDFlMmU2N2Rm
+  ```
 
 ## Reference
 
@@ -250,3 +280,6 @@ Kubernetes Documentation | https://kubernetes.io/docs/home
 Kubernetes Documentation Reference | https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#-strong-api-overview-strong
 NGINX Ingress Controller | https://kubernetes.github.io/ingress-nginx/deploy
 ChatGPT | https://chat.openai.com/
+
+## Full Implementation
+I created full implementation Kubernetes with Golang and you can take a look at this repository https://github.com/muhammadrivaldy/basic-k8s
