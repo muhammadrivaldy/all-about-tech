@@ -148,7 +148,7 @@ Design pattern is a solution to solving a common problem in software design. It'
 
 ---
 
-### Data Structure ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### [Data Structures](./data_structures.md) ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
 
