@@ -152,4 +152,4 @@ Design pattern is a solution to solving a common problem in software design. It'
 
 #### Overview
 
-#### What is Data Structure?
+#### What is Data Structures?
