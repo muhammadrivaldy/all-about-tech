@@ -8,7 +8,7 @@ Design pattern is a solution to solving a common problem in software design. It'
 
 ## Why we need to know?
 
-Design patterns will help you and your team to develop good code and you can know the code from your teammates easily. This approach will help you to create a code that is maintainable and upgradeable.
+Design patterns will help you and your team to develop good code and you can know the code from your teammates easily. This approach will help you to create a code that is maintainable, reusable, & readable.
 
 ## Various of Design Pattern
 
@@ -19,12 +19,8 @@ Design patterns will help you and your team to develop good code and you can kno
   ![](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
 
   The factory method declared the interface, and then the interface will be represented by the child classes. So, with this pattern, we can create an object with one, two, or more different child class with a similar behavior.
-  
-  *PS*: When do you use this pattern? You can use this pattern if you have several resources and you wanna get a similar result.
 
 * #### Abstract Factory
-
-  
 
 * #### Builder
 
