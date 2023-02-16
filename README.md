@@ -52,6 +52,14 @@ Design pattern is a solution to solving a common problem in software design. It'
 
 ---
 
+### Space Complexity ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+
+#### Overview
+
+#### What are Space Complexity?
+
+---
+
 ### Clean Code ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview
