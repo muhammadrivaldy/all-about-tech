@@ -1,6 +1,6 @@
 # Basic of Kubernetes (K8s)
 
-![](https://badgen.net/badge/status/completed/green) ![](https://badgen.net/badge/version/v1.0.0/cyan)
+![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
 ## Overview
 
@@ -10,7 +10,7 @@ In 2014 Google teams state the project Kubernetes will be set as Open source.
 
 ### Let's throwback
 
-![](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg)
+![Container Revolution](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg)
 
 * #### Traditional Deployment
 
@@ -62,7 +62,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   Example a Kubernetes object of nodes:
 
-  ```
+  ``` yaml
   apiVersion: v1
   kind: Node
   metadata:
@@ -78,7 +78,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   Example a Kubernetes object of pods:
   
-  ```
+  ``` yaml
   apiVersion: v1
   kind: Pod
   metadata:
@@ -97,14 +97,14 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   So, why do we need a "deployment object"? The answer is because "deployment object" has several excellent features that easier the process development, among others:
 
-  - Rolling update
-  - Rollback a deployment
-  - Scaling a deployment
-  - Pausing and resuming a rollout
+  * Rolling update
+  * Rollback a deployment
+  * Scaling a deployment
+  * Pausing and resuming a rollout
 
   Example a Kubernetes object of deployments:
 
-  ```
+  ``` yaml
   apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -136,7 +136,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   Example a Kubernetes object of service:
 
-  ```
+  ``` yaml
   apiVersion: v1
   kind: Service
   metadata:
@@ -156,11 +156,11 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   This is how the system looks like:
 
-  ![](https://www.spectrocloud.com/static/f5c9c043a2705d286584c0c03d42bf51/5ca22/73-image1.png)
+  ![Ingress](https://www.spectrocloud.com/static/f5c9c043a2705d286584c0c03d42bf51/5ca22/73-image1.png)
 
   Example a Kubernetes object of ingress:
 
-  ```
+  ``` yaml
   apiVersion: networking.k8s.io/v1
   kind: Ingress
   metadata:
@@ -191,11 +191,11 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   Persistent volume claim is used by a pod to request some resource to persistent volume. So, a pod will have storage that aligns with the pod needed.
 
-  ![](https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/05/1_keV2VBkCHb7cn_Rib0huYg.png?fit=810%2C516&ssl=1)
+  ![Volumes](https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/05/1_keV2VBkCHb7cn_Rib0huYg.png?fit=810%2C516&ssl=1)
 
   Example a Kubernetes object of volume, persistent volume, & persistent volume claim:
 
-  ```
+  ``` yaml
   apiVersion: v1
   kind: PersistentVolume
   metadata:
@@ -245,7 +245,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   Example a Kubernetes object of config map:
 
-  ```
+  ``` yaml
   apiVersion: v1
   kind: ConfigMap
   metadata:
@@ -261,7 +261,7 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
   Example a Kubernetes object of secret:
 
-  ```
+  ``` yaml
   apiVersion: v1
   kind: Secret
   metadata:
@@ -276,10 +276,11 @@ If you wanna work with Kubernetes objects (for creating, modifying, or deleting)
 
 Title | URL
 --- | ---
-Kubernetes Documentation | https://kubernetes.io/docs/home
-Kubernetes Documentation Reference | https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#-strong-api-overview-strong
-NGINX Ingress Controller | https://kubernetes.github.io/ingress-nginx/deploy
-ChatGPT | https://chat.openai.com/
+Kubernetes Documentation | <https://kubernetes.io/docs/home>
+Kubernetes Documentation Reference | <https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#-strong-api-overview-strong>
+NGINX Ingress Controller | <https://kubernetes.github.io/ingress-nginx/deploy>
+ChatGPT | <https://chat.openai.com/>
 
 ## Full Implementation
-I created full implementation Kubernetes with Golang and you can take a look at this repository https://github.com/muhammadrivaldy/basic-k8s
+
+I created full implementation Kubernetes with Golang and you can take a look at this repository <https://github.com/muhammadrivaldy/basic-k8s>

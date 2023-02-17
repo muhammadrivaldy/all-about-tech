@@ -1,6 +1,6 @@
 # Design Pattern
 
-![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
+![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
 ## Overview
 
@@ -16,7 +16,7 @@ Design patterns will help you and your team to develop good code and you can kno
 
 * #### Factory Method
 
-  ![](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
+  ![Factory](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
 
   The factory method declared the interface, and then the interface will be represented by the child classes. So, with this pattern, we can create an object with one, two, or more different child class with a similar behavior.
 
@@ -70,7 +70,7 @@ Design patterns will help you and your team to develop good code and you can kno
 
 Title | URL
 ---|---
-Design Patterns | https://refactoring.guru/design-patterns
-Design Pattern untuk Pembuatan Perangkat Lunak | https://www.dicoding.com/blog/design-pattern/
-Factory patterns in Go (Golang) | https://www.sohamkamani.com/golang/2018-06-20-golang-factory-patterns/
-Desing Patterns in Golang: Factory Method | https://blog.ralch.com/articles/design-patterns/golang-factory-method/
+Design Patterns | <https://refactoring.guru/design-patterns>
+Design Pattern untuk Pembuatan Perangkat Lunak | <https://www.dicoding.com/blog/design-pattern/>
+Factory patterns in Go (Golang) | <https://www.sohamkamani.com/golang/2018-06-20-golang-factory-patterns/>
+Desing Patterns in Golang: Factory Method | <https://blog.ralch.com/articles/design-patterns/golang-factory-method/>

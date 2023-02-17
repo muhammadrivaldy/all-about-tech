@@ -10,9 +10,9 @@ So, let's start the thread! 🚀️
 
 ## 🧠️ What I learned
 
-### [Basic of Kubernetes (K8s)](./basic_of_kubernetes.md) ![](https://badgen.net/badge/status/completed/green) ![](https://badgen.net/badge/version/v1.0.0/cyan)
+### [Basic of Kubernetes (K8s)](./basic_of_kubernetes.md) ![Complated](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
-#### Overview
+#### Overview Basic of Kubernetes (K8s)
 
 Kubernetes, called K8s is a platform open source for automation deployment, scaling and managing many containers. K8s is an abbreviation of "Kubernetes" in which "ubernete" are replaced by "8".
 
@@ -20,152 +20,118 @@ In 2014 Google teams state the project Kubernetes will be set as Open source.
 
 ---
 
-### [Design Pattern](./design_pattern.md) ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
+### [Design Pattern](./design_pattern.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
-#### Overview
+#### Overview Design Pattern
 
 Design pattern is a solution to solving a common problem in software design. It's not only to solve one case, design patterns are coverage many cases in software design. You can use it as a blueprint, so it will be helping you to develop your code with a pattern. Design patterns are concepts, you cannot copy them into your program without an adjustment.
 
 ---
 
-### [Class Diagram](./class_diagram.md) ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
+### [Class Diagram](./class_diagram.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
-#### Overview
+#### Overview Class Diagram
 
 With Class Diagram we able to imagine the system as a blueprint. The blueprint will maps out attributes, methods, & relationships between classes. So, you can analyse concept of model that you want before you start coding.
 
 ## 🍃️ What I want to share or learn
 
-### SOLID Definition ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### SOLID Definition ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What are SOLID Definition?
+#### Overview SOLID Definition
 
 ---
 
-### DDD & TDD in Programming ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### DDD & TDD in Programming ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What are DDD & TDD in Programming?
+#### Overview DDD & TDD in Programming
 
 ---
 
-### Time Complexity ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Time Complexity ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What are Time Complexity?
+#### Overview Time Complexity
 
 ---
 
-### Space Complexity ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Space Complexity ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What are Space Complexity?
+#### Overview Space Complexity
 
 ---
 
-### Clean Code ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Clean Code ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is Clean Code?
+#### Overview Clean Code
 
 ---
 
-### Software Design ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Software Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is Software Design?
+#### Overview Software Design
 
 ---
 
-### C4 Model ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### C4 Model ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is C4 Model?
+#### Overview C4 Model
 
 ---
 
-### Clean Architecture ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Clean Architecture ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is Clean Architecture?
+#### Overview Clean Architecture
 
 ---
 
-### Code Smell ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Code Smell ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is Code Smell?
+#### Overview Code Smell
 
 ---
 
-### Database Types ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Database Types ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What are Database Types?
+#### Overview Database Types
 
 ---
 
-### Vertical & Horizontal Scalling ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Vertical & Horizontal Scaling ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What are Vertical & Horizontal Scalling?
+#### Overview Vertical & Horizontal Scaling
 
 ---
 
-### GrapQL with Golang ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### GraphQL with Golang ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is GrapQL?
+#### Overview GraphQL
 
 ---
 
-### gRPC with Golang ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### gRPC with Golang ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is gRPC?
+#### Overview gRPC
 
 ---
 
-### System Design ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### System Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is System Design?
+#### Overview System Design
 
 ---
 
-### Diagram as Code ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Diagram as Code ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is Diagram as Code?
+#### Overview Diagram as Code
 
 ---
 
-### Algirithm ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### Algorithm ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is Algirithm?
+#### Overview Algorithm
 
 ---
 
-### [Data Structures](./data_structures.md) ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
+### [Data Structures](./data_structures.md) ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
-#### Overview
-
-#### What is Data Structures?
+#### Overview Data Structures
