@@ -26,6 +26,14 @@ In 2014 Google teams state the project Kubernetes will be set as Open source.
 
 Design pattern is a solution to solving a common problem in software design. It's not only to solve one case, design patterns are coverage many cases in software design. You can use it as a blueprint, so it will be helping you to develop your code with a pattern. Design patterns are concepts, you cannot copy them into your program without an adjustment.
 
+---
+
+### [Class Diagram](./class_diagram.md) ![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
+
+#### Overview
+
+With Class Diagram we able to imagine the system as a blueprint. The blueprint will maps out attributes, methods, & relationships between classes. So, you can analyse concept of model that you want before you start coding.
+
 ## 🍃️ What I want to share or learn
 
 ### SOLID Definition ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
@@ -161,11 +169,3 @@ Design pattern is a solution to solving a common problem in software design. It'
 #### Overview
 
 #### What is Data Structures?
-
----
-
-### [Class Diagram](./class_diagram.md) ![](https://badgen.net/badge/status/waiting/gray) ![](https://badgen.net/badge/version/v0.0.0/gray)
-
-#### Overview
-
-#### What is Class Diagram?
