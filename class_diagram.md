@@ -1,5 +1,7 @@
 # Class Diagram
 
+![](https://badgen.net/badge/status/in%20progress/orange) ![](https://badgen.net/badge/version/v0.0.1/cyan)
+
 ## Overiview
 
 Before we learn about **Class Diagram**, we need to know the **UML Diagram** strcuture first. Because, **UML Diagram** has derivatives.
@@ -9,6 +11,10 @@ In this case, **UML Diagram** has 2 types (Structural & Behavioral) diagram.
 
 We won't learn about **UML Diagram** in here. We will focus on **Class Diagram**. With **Class Diagram** we able to imagine the system as a blueprint.
 The blueprint will maps out attributes, methods, & relationships between classes. So, you can analyse **concept of model** that you want before you start coding.
+
+### Class Notation
+
+Class will represent every component like **class name**, **class attributes**, & **class operations** (methods).
 
 ## Reference
 Title | URL
