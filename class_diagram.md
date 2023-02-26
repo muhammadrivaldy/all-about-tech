@@ -1,6 +1,6 @@
 # Class Diagram
 
-![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
+![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
 ## Overview
 
@@ -12,17 +12,60 @@ In this case, **UML Diagram** has 2 types (Structural & Behavioral) diagram.
 We won't learn about **UML Diagram** in here. We will focus on **Class Diagram**. With **Class Diagram** we able to imagine the system as a blueprint.
 The blueprint will maps out attributes, methods, & relationships between classes. So, you can analyse **concept of model** that you want before you start coding.
 
-### Class Notation
+## Class Notation
 
 Class will represent every component like **class name**, **class attributes**, & **class operations** (methods).
 
 ![Notation](./class_diagram/assets/notation.png)
 
+## Class Relationship
+
+* Association
+
+    Association is a relation between class.
+
+    ![Association](./class_diagram/assets/association.png)
+
+* Inheritance
+
+    Inheritance is a relation between parent & child classes. Child class will inherit behavior of their parent.
+
+    ![Inheritance](./class_diagram/assets/inheritance.png)
+
+* Realization (Implementation)
+
+    Realization is a relation between class and interface. The interface will define functions and the class will create methods based on interface defined.
+
+    ![Realization](./class_diagram/assets/realization.png)
+
+* Dependency
+
+    Dependency is defined 2 classes having a relationship each other. In this case, the child will be following the parent's behavior. So, if the parent has changed will be impacted the child's class.
+
+    ![Dependency](./class_diagram/assets/dependency.png)
+
+* Aggregation
+
+    Aggregation is similar to the association. But, the relationship between each class isn't strict. If one class is removed, another class is still alive by itself.
+
+    ![Dependency](./class_diagram/assets/aggregation.png)
+
+* Composition
+
+    Composition is really similar to aggregation. But, the relationship between classes is strict. The child class cannot be alive if the parent class is removed.
+
+    ![Dependency](./class_diagram/assets/composition.png)
+
+## Example: Class Diagram of Order
+
+![Dependency](./class_diagram/assets/final-example.png)
+
 ## Reference
 
 Title | URL
 --- | ---
-What is Class Diagram? | <https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/>
+Chat GPT | <https://chat.openai.com/chat>
+What is a Class Diagram? | <https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/>
 UML Class Diagram Tutorial | <https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/>
 Class diagrams | <https://www.ibm.com/docs/en/rsm/7.5.0?topic=structure-class-diagrams>
 UML class diagram arrow types: explanations and examples | <https://www.gleek.io/blog/class-diagram-arrows.html>

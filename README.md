@@ -28,7 +28,7 @@ Design pattern is a solution to solving a common problem in software design. It'
 
 ---
 
-### [Class Diagram](./class_diagram.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
+### [Class Diagram](./class_diagram.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
 #### Overview Class Diagram
 
