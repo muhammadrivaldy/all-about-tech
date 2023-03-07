@@ -70,6 +70,7 @@ Design patterns will help you and your team to develop good code and you can kno
 
 Title | URL
 ---|---
+Chat GPT | <https://chat.openai.com/chat>
 Design Patterns | <https://refactoring.guru/design-patterns>
 Design Pattern untuk Pembuatan Perangkat Lunak | <https://www.dicoding.com/blog/design-pattern/>
 Factory patterns in Go (Golang) | <https://www.sohamkamani.com/golang/2018-06-20-golang-factory-patterns/>
