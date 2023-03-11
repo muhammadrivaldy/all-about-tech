@@ -1,0 +1,18 @@
+@startuml Aggregation
+
+skinparam classAttributeIconSize 0
+
+class Employee {
+    - position: string
+    + getPosition(): string
+}
+
+class CoffeeStore {
+    - storeName: string
+    - owner: Owner
+    - employees: []Employee
+}
+
+Employee --o CoffeeStore
+
+@enduml

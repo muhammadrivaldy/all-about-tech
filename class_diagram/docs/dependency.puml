@@ -1,0 +1,17 @@
+@startuml Dependency
+
+skinparam classAttributeIconSize 0
+
+interface StoreInterface {
+    + getStoreName(): string
+    + getOwnerName(): string
+    + getEmployees(): []Employee
+}
+
+class MainStore {
+    + storeInterface: StoreInterface
+}
+
+StoreInterface <-- MainStore
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml Association
+
+skinparam classAttributeIconSize 0
+
+class Class1 {
+    + Attribute
+    + Method(): void
+}
+
+class Class2 {
+    + Attribute
+    + Method(): void
+}
+
+Class1 - Class2
+
+@enduml

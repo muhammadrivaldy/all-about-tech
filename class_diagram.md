@@ -1,6 +1,6 @@
 # Class Diagram
 
-![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
+![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.1.0/cyan)
 
 ## Overview
 
@@ -18,47 +18,55 @@ Class will represent every component like **class name**, **class attributes**, 
 
 ![Notation](./class_diagram/assets/notation.png)
 
+## Class Visibility
+
+Symbol | Mean
+--- | ---
+\+ | Public attributes or operations
+\- | Private attributes or operations
+\# | Protected attributes or operations
+
 ## Class Relationship
 
 * Association
 
-    Association is a relation between class.
+    Association is a standard relation between classes.
 
-    ![Association](./class_diagram/assets/association.png)
+    ![Association](./class_diagram/out/docs/association/Association.png)
 
 * Inheritance
 
     Inheritance is a relation between parent & child classes. Child class will inherit behavior of their parent.
 
-    ![Inheritance](./class_diagram/assets/inheritance.png)
+    ![Inheritance](./class_diagram/out/docs/inheritance/Inheritance.png)
 
 * Realization (Implementation)
 
     Realization is a relation between class and interface. The interface will define functions and the class will create methods based on interface defined.
 
-    ![Realization](./class_diagram/assets/realization.png)
+    ![Realization](./class_diagram/out/docs/implementation/Implementation.png)
 
 * Dependency
 
-    Dependency is defined 2 classes having a relationship each other. In this case, the child will be following the parent's behavior. So, if the parent has changed will be impacted the child's class.
+    Dependency is defined 2 classes having a relationship through interface. In this case, the child will be following the parent's behavior. So, if the parent has changed will be impacted the child's class.
 
-    ![Dependency](./class_diagram/assets/dependency.png)
+    ![Dependency](./class_diagram/out/docs/dependency/Dependency.png)
 
 * Aggregation
 
     Aggregation is similar to the association. But, the relationship between each class isn't strict. If one class is removed, another class is still alive by itself.
 
-    ![Dependency](./class_diagram/assets/aggregation.png)
+    ![Dependency](./class_diagram/out/docs/aggregation/Aggregation.png)
 
 * Composition
 
     Composition is really similar to aggregation. But, the relationship between classes is strict. The child class cannot be alive if the parent class is removed.
 
-    ![Dependency](./class_diagram/assets/composition.png)
+    ![Dependency](./class_diagram/out/docs/composition/Composition.png)
 
-## Example: Class Diagram of Order
+## Example: Class Diagram of Store
 
-![Dependency](./class_diagram/assets/final-example.png)
+![Dependency](./class_diagram/out/docs/final-example/Final-Example.png)
 
 ## Reference
 
@@ -69,3 +77,9 @@ What is a Class Diagram? | <https://www.visual-paradigm.com/guide/uml-unified-mo
 UML Class Diagram Tutorial | <https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/>
 Class diagrams | <https://www.ibm.com/docs/en/rsm/7.5.0?topic=structure-class-diagrams>
 UML class diagram arrow types: explanations and examples | <https://www.gleek.io/blog/class-diagram-arrows.html>
+
+## Updates
+
+Version | What is the update?
+--- | ---
+v1.1.0 | I update the diagram from used **diagrams.net** to **plantuml**. Because it's more easy to maintenance it with plantuml. And also, I detailed every example relation to more better context.

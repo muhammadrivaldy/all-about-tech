@@ -1,0 +1,17 @@
+@startuml Implementation
+
+skinparam classAttributeIconSize 0
+
+interface StoreInterface {
+    + getStoreName(): string
+    + getOwnerName(): string
+    + getEmployees(): []Employee
+}
+
+class CoffeeStore implements StoreInterface {
+    - storeName: string
+    - owner: Owner
+    - employees: []Employee
+}
+
+@enduml

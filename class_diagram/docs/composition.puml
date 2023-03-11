@@ -1,0 +1,18 @@
+@startuml Composition
+
+skinparam classAttributeIconSize 0
+
+class CoffeeStore {
+    - storeName: string
+    - owner: Owner
+    - employees: []Employee
+}
+
+class Owner {
+    - balance: integer
+    + getBalance(): integer
+}
+
+Owner --* CoffeeStore
+
+@enduml

@@ -1,0 +1,43 @@
+@startuml Final Example
+
+skinparam classAttributeIconSize 0
+
+class User {
+    - id: integer
+    - name: string
+    + getId(): integer
+    + getName(): string
+}
+
+class Employee extends User {
+    - position: string
+    + getPosition(): string
+}
+
+interface StoreInterface {
+    + getStoreName(): string
+    + getOwnerName(): string
+    + getEmployees(): []Employee
+}
+
+class CoffeeStore implements StoreInterface {
+    - storeName: string
+    - owner: Owner
+    - employees: []Employee
+}
+
+class Owner extends User {
+    - balance: integer
+    + getBalance(): integer
+}
+
+Employee --o CoffeeStore
+Owner --* CoffeeStore
+
+class MainStore {
+    + storeInterface: StoreInterface
+}
+
+StoreInterface <-- MainStore
+
+@enduml

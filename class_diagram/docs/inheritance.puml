@@ -1,0 +1,22 @@
+@startuml Inheritance
+
+skinparam classAttributeIconSize 0
+
+class User {
+    - id: integer
+    - name: string
+    + getId(): integer
+    + getName(): string
+}
+
+class Employee extends User {
+    - position: string
+    + getPosition(): string
+}
+
+class Owner extends User {
+    - balance: integer
+    + getBalance(): integer
+}
+
+@enduml
