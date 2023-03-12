@@ -8,6 +8,12 @@ interface StoreInterface {
     + getEmployees(): []Employee
 }
 
+class CoffeeStore implements StoreInterface {
+    - storeName: string
+    - owner: Owner
+    - employees: []Employee
+}
+
 class MainStore {
     + storeInterface: StoreInterface
 }
