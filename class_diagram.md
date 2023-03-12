@@ -64,9 +64,15 @@ Symbol | Mean
 
     ![Dependency](./class_diagram/out/docs/composition/Composition.png)
 
-## Example: Class Diagram of Store
+## Example
+
+### Class Diagram of Store
 
 ![Dependency](./class_diagram/out/docs/final-example/Final-Example.png)
+
+### Implementation with Typescript
+
+If you wanna see the full implementation, you can go to this [Code Implementation](./class_diagram/example.ts)
 
 ## Reference
 
