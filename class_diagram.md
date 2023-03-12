@@ -54,7 +54,7 @@ Symbol | Mean
 
 * Aggregation
 
-    Aggregation is similar to the association. But, the relationship between each class isn't strict. If one class is removed, another class is still alive by itself.
+    Aggregation is a relationship between classes that isn't strict. If one class is removed, another class is still alive by itself.
 
     ![Dependency](./class_diagram/out/docs/aggregation/Aggregation.png)
 
