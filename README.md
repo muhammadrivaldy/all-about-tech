@@ -34,13 +34,21 @@ Design pattern is a solution to solving a common problem in software design. It'
 
 With Class Diagram we able to imagine the system as a blueprint. The blueprint will maps out attributes, methods, & relationships between classes. So, you can analyse concept of model that you want before you start coding.
 
-## 🍃️ What I want to share or learn
+---
 
-### SOLID Definition ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
+### [SOLID Definition](./solid_defination.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
 #### Overview SOLID Definition
 
----
+SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://en.wikipedia.org/wiki/Robert_C._Martin). It's best-known design principles in object oriented programming. SOLID is acronym of 5 principles of:
+
+- Single Responsibility Principle
+- Open/Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Dependency Inversion Principle
+
+## 🍃️ What I want to share or learn
 
 ### DDD & TDD in Programming ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
