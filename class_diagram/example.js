@@ -15,7 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.MainStore = exports.CoffeeStore = exports.Owner = exports.Employee = exports.User = void 0;
+exports.MainStore = exports.CakeStore = exports.CoffeeStore = exports.Owner = exports.Employee = exports.User = void 0;
 var User = /** @class */ (function () {
     function User(id, name) {
         this.id = id;
@@ -53,7 +53,7 @@ var CoffeeStore = /** @class */ (function () {
         this.employees = [];
         this.storeName = storeName;
         this.owner = new Owner(1, "Rival", 1250000);
-        this.employees.push(new Employee(3, "Santo", "Manager"));
+        this.employees.push(new Employee(2, "Santo", "Manager"));
     }
     CoffeeStore.prototype.getStoreName = function () {
         return this.storeName;
@@ -67,6 +67,25 @@ var CoffeeStore = /** @class */ (function () {
     return CoffeeStore;
 }());
 exports.CoffeeStore = CoffeeStore;
+var CakeStore = /** @class */ (function () {
+    function CakeStore(storeName) {
+        this.employees = [];
+        this.storeName = storeName;
+        this.owner = new Owner(3, "Steven", 1250000);
+        this.employees.push(new Employee(4, "Sudarsono", "Manager"));
+    }
+    CakeStore.prototype.getStoreName = function () {
+        return this.storeName;
+    };
+    CakeStore.prototype.getOwnerName = function () {
+        return this.owner.getName();
+    };
+    CakeStore.prototype.getEmployees = function () {
+        return this.employees;
+    };
+    return CakeStore;
+}());
+exports.CakeStore = CakeStore;
 var MainStore = /** @class */ (function () {
     function MainStore(storeInterface) {
         this.storeInterface = storeInterface;

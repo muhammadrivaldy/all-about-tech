@@ -1,10 +1,17 @@
 "use strict";
 exports.__esModule = true;
 var example_1 = require("./example");
-var mainStore = new example_1.MainStore(new example_1.CoffeeStore("Store Laundry")).storeInterface;
-var result = {
-    storeName: mainStore.getStoreName(),
-    ownerName: mainStore.getOwnerName(),
-    employees: mainStore.getEmployees()
+var mainCoffeeStore = new example_1.MainStore(new example_1.CoffeeStore("Store Coffee Abadie")).storeInterface;
+var mainCakeStore = new example_1.MainStore(new example_1.CakeStore("Store Cake Selamanya")).storeInterface;
+var resultCoffee = {
+    storeName: mainCoffeeStore.getStoreName(),
+    ownerName: mainCoffeeStore.getOwnerName(),
+    employees: mainCoffeeStore.getEmployees()
 };
-console.log(JSON.stringify(result));
+var resultCake = {
+    storeName: mainCakeStore.getStoreName(),
+    ownerName: mainCakeStore.getOwnerName(),
+    employees: mainCakeStore.getEmployees()
+};
+console.log(JSON.stringify(resultCoffee));
+console.log(JSON.stringify(resultCake));

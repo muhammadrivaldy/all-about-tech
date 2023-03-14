@@ -1,4 +1,4 @@
-import {Employee, MainStore, CoffeeStore} from "./example";
+import {Employee, MainStore, CoffeeStore, CakeStore} from "./example";
 
 interface Result {
     storeName: string;
@@ -6,12 +6,20 @@ interface Result {
     employees: Employee[];
 }
 
-var mainStore = new MainStore(new CoffeeStore("Store Laundry")).storeInterface;
+var mainCoffeeStore = new MainStore(new CoffeeStore("Store Coffee Abadie")).storeInterface;
+var mainCakeStore = new MainStore(new CakeStore("Store Cake Selamanya")).storeInterface;
 
-var result: Result = {
-    storeName: mainStore.getStoreName(),
-    ownerName: mainStore.getOwnerName(),
-    employees: mainStore.getEmployees()
+var resultCoffee: Result = {
+    storeName: mainCoffeeStore.getStoreName(),
+    ownerName: mainCoffeeStore.getOwnerName(),
+    employees: mainCoffeeStore.getEmployees()
 }
 
-console.log(JSON.stringify(result));
+var resultCake: Result = {
+    storeName: mainCakeStore.getStoreName(),
+    ownerName: mainCakeStore.getOwnerName(),
+    employees: mainCakeStore.getEmployees()
+}
+
+console.log(JSON.stringify(resultCoffee));
+console.log(JSON.stringify(resultCake));

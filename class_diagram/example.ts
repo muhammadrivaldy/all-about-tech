@@ -54,7 +54,33 @@ export class CoffeeStore implements StoreInterface {
     constructor(storeName: string) {
         this.storeName = storeName;
         this.owner = new Owner(1, "Rival", 1250000);
-        this.employees.push(new Employee(3, "Santo", "Manager"));
+        this.employees.push(new Employee(2, "Santo", "Manager"));
+    }
+
+    public getStoreName(): string {
+        return this.storeName;
+    }
+
+    public getOwnerName(): string {
+        return this.owner.getName();
+    }
+
+    public getEmployees(): Employee[] {
+        return this.employees;
+    }
+
+}
+
+export class CakeStore implements StoreInterface {
+    
+    private storeName: string;
+    private owner: Owner;
+    private employees: Employee[] = [];
+
+    constructor(storeName: string) {
+        this.storeName = storeName;
+        this.owner = new Owner(3, "Steven", 1250000);
+        this.employees.push(new Employee(4, "Sudarsono", "Manager"));
     }
 
     public getStoreName(): string {

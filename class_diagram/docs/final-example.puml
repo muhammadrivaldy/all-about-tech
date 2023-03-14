@@ -26,6 +26,12 @@ class CoffeeStore implements StoreInterface {
     - employees: []Employee
 }
 
+class CakeStore implements StoreInterface {
+    - storeName: string
+    - owner: Owner
+    - employees: []Employee
+}
+
 class Owner extends User {
     - balance: integer
     + getBalance(): integer
@@ -33,6 +39,8 @@ class Owner extends User {
 
 Employee --o CoffeeStore
 Owner --* CoffeeStore
+Employee --o CakeStore
+Owner --* CakeStore
 
 class MainStore {
     + storeInterface: StoreInterface

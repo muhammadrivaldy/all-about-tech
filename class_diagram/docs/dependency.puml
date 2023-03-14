@@ -14,6 +14,12 @@ class CoffeeStore implements StoreInterface {
     - employees: []Employee
 }
 
+class CakeStore implements StoreInterface {
+    - storeName: string
+    - owner: Owner
+    - employees: []Employee
+}
+
 class MainStore {
     + storeInterface: StoreInterface
 }
