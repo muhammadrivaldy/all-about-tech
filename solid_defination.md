@@ -14,6 +14,18 @@ SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://
 
 Adopting those principles will help you to reduce tight coupling. It means a group of classes are highly dependent on one another which you should avoid in your code. Another benefit implements those principles are helping you to make your code flexible, scalable, maintainable, and reusable.
 
+## SOLID Principles
+
+### Single Responsibility Principle
+
+### Open/Closed Principle
+
+### Liskov Substitution Principle
+
+### Interface Segregation Principle
+
+### Dependency Inversion Principle
+
 ## Reference
 
 Title | URL
