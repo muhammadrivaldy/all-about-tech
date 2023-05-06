@@ -18,6 +18,10 @@ SOLID is acronym 5 principles of:
 
 ### Single Responsibility Principle
 
+Single responsibility has a statement “a class should have only one reason to change”, the meaning of that statement is the class is only have one responsibility or single job. I will give you an example based on restaurant jobs. They have 2 important jobs there "waiter" and "chef". The waiter has a responsibility to take an order from the customer and give the information to the kitchen side, and the chef has a responsibility to make food based on the request from the waiter. They have their own responsibilities and it will make the person more focused on his task rather than one person handling both of job, it will make the person confused.
+
+Often, the developer put all of cases in the one function. That makes the function not readable and not maintainable. Because the function will have a long code line.
+
 ### Open/Closed Principle
 
 ### Liskov Substitution Principle
