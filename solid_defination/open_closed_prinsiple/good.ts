@@ -1,4 +1,4 @@
-class Employee_CorrectExample {
+class Employee_GoodExample {
 
     private name: string;
     private address: string;
@@ -18,7 +18,7 @@ class Employee_CorrectExample {
 
 }
 
-class EmployeeSalaries_CorrectExample {
+class EmployeeSalaries_GoodExample {
     
     private attendance: number;
     private salary: number;
