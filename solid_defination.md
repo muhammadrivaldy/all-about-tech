@@ -18,8 +18,6 @@ SOLID is acronym 5 principles of:
 
 ### Single Responsibility Principle
 
-Single responsibility statement:
-
 > A class should have only one reason to change
 
 The statement above means that the class has only one responsibility or single job so every class has a specialty. Like waiters and chefs in the restaurant, they have specific responsibilities to each other. The waiter's responsibility is to gather the request from customers and put it in the note and send it to the kitchen. On the other side, the chef's responsibility is to the food based on the request from the waiter. The waiters and the chefs have different responsibilities, this is an example of _"Single responsibility implementation"_.
