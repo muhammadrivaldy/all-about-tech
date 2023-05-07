@@ -18,13 +18,13 @@ SOLID is acronym 5 principles of:
 
 ### Single Responsibility Principle
 
-Single responsibility: _`A class should have only one reason to change`_
+Single responsibility statement:
 
-The statement above means that the class has only one responsibility or single job so every class has a specialty. Like waiters and chefs in the restaurant, they have specific responsibilities to each other. The waiter's responsibility is to gather the request from customers and put it in the note and send it to the kitchen. On the other side, the chef's responsibility is to the food based on the request from the waiter.
+> A class should have only one reason to change
 
-Single responsibility has a statement `“a class should have only one reason to change”`, the meaning of that statement is the class is only have one responsibility or single job. I will give you an example based on restaurant jobs. They have 2 important jobs there "waiter" and "chef". The waiter has a responsibility to take an order from the customer and give the information to the kitchen side, and the chef has a responsibility to make food based on the request from the waiter. They have their own responsibilities and it will make the person more focused on his task rather than one person handling both of job, it will make the person confused.
+The statement above means that the class has only one responsibility or single job so every class has a specialty. Like waiters and chefs in the restaurant, they have specific responsibilities to each other. The waiter's responsibility is to gather the request from customers and put it in the note and send it to the kitchen. On the other side, the chef's responsibility is to the food based on the request from the waiter. The waiters and the chefs have different responsibilities, this is an example of _"Single responsibility implementation"_.
 
-Often, the developer put all of cases in the one class. That makes the class not readable and not maintainable (too many functions), because the class will have a long code line.
+The benefit of implementing _"Single responsibility"_ is the class will have focus. If you force the class to have more than one responsibility, it will make the developer confused because the class has many abilities. Let's make an example with `Typescript`.
 
 #### Example
 
