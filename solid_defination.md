@@ -119,3 +119,4 @@ SOLID (Software Design Principles) | <https://www.techtarget.com/whatis/definiti
 SOLID Principles for Programming and Software Design | <https://www.freecodecamp.org/news/solid-principles-for-programming-and-software-design/>
 A Solid Guide to SOLID Principles | <https://www.baeldung.com/solid-principles>
 SOLID Design Principles Explained: Dependency Inversion Principle with Code Examples | <https://stackify.com/dependency-inversion-principle/>
+How To Use Open Closed Principle in PHP/Laravel | <https://mohasin-dev.medium.com/how-to-use-open-closed-principal-in-php-laravel-af4fa3b2a1c1>
