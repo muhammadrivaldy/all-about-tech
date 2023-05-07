@@ -18,19 +18,17 @@ SOLID is acronym 5 principles of:
 
 ### Single Responsibility Principle
 
-> A class should have only one reason to change
+A class should have only one reason to change
 
-The statement above means that the class has only one responsibility or single job so every class has a specialty. Like waiters and chefs in the restaurant, they have specific responsibilities to each other. The waiter's responsibility is to gather the request from customers and put it in the note and send it to the kitchen. On the other side, the chef's responsibility is to the food based on the request from the waiter. The waiters and the chefs have different responsibilities, this is an example of _"Single responsibility implementation"_.
+The statement above means that the class has only one responsibility or single job so every class has a specialty. Like waiters and chefs in the restaurant, they have specific responsibilities to each other. The waiter's responsibility is to gather the request from customers and put it in the note and send it to the kitchen. On the other side, the chef's responsibility is to the food based on the request from the waiter. The waiters and the chefs have different responsibilities, this is an example of _"Single responsibility principle"_.
 
-The benefit of implementing _"Single responsibility"_ is the class will have focus. If you force the class to have more than one responsibility, it will make the developer confused because the class has many abilities. Let's make an example with `Typescript`.
+> The benefit of implementing _"Single responsibility"_ is the class will have focus. If you force the class to have more than one responsibility, it will make the developer confused because the class has many abilities. Let's make an example with `Typescript`.
 
 #### Example
 
-We have a class Employee, the class will manage employees information like personal information or salary of employee. We have 2 examples (bad & good) implementations, let's take a look to the codes below:
+We will make a new class with the name _"Employee"_ that handles the employee's detail. This class has many responsibilities and we need to fix it with a _Single responsibility principle_ implementation.
 
 ##### Bad Implementation
-
-It's bad approach because the class `Employee` is manage two things of employees (information & salaries of employee). In single responsibility approach, we should use one class for one thing. Let's continue with the single responsibility implementation.
 
 ``` ts
 class Employee {
@@ -62,9 +60,7 @@ class Employee {
 }
 ```
 
-##### Good Implementation
-
-In the previously, one class is manage more than one thing. That is not a principle of `Single responsibility`. Let's take a look to the code below for the good single responsibility implementation.
+##### Single responsibility implementation
 
 ``` ts
 class Employee {
