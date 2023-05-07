@@ -22,13 +22,9 @@ A class should have only one reason to change
 
 The statement above means that the class has only one responsibility or single job so every class has a specialty. Like waiters and chefs in the restaurant, they have specific responsibilities to each other. The waiter's responsibility is to gather the request from customers and put it in the note and send it to the kitchen. On the other side, the chef's responsibility is to the food based on the request from the waiter. The waiters and the chefs have different responsibilities, this is an example of _"Single responsibility principle"_.
 
-> The benefit of implementing _"Single responsibility"_ is the class will have focus. If you force the class to have more than one responsibility, it will make the developer confused because the class has many abilities. Let's make an example with `Typescript`.
+The benefit of implementing _"Single responsibility"_ is the class will have focus. If you force the class to have more than one responsibility, it will make the developer confused because the class has many abilities. Let's make an example with `Typescript`. We will make a new class with the name _"Employee"_ that handles the employee's detail. This class has many responsibilities and we need to fix it with a _Single responsibility principle_ implementation.
 
-#### Example
-
-We will make a new class with the name _"Employee"_ that handles the employee's detail. This class has many responsibilities and we need to fix it with a _Single responsibility principle_ implementation.
-
-##### Bad Implementation
+#### Bad Implementation
 
 ``` ts
 class Employee {
@@ -60,7 +56,7 @@ class Employee {
 }
 ```
 
-##### Single responsibility implementation
+#### Single responsibility implementation
 
 ``` ts
 class Employee {
