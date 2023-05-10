@@ -104,8 +104,6 @@ This principle ensures we do not change the existing code when we want to add a 
 
 Sometimes the functions or classes are already dependent on the other codes, if you want to change that function it will impact to the other's code. We can solve it with the _"Open/Closed principle"_. So, the benefit of implementing the _"Open/Closed principle"_ is you don't need to worry your change will impact the existing code. Because you only extend the existing code and make a new code with it.
 
-<!-- The benefit of implementing _"Open/Closed Principle"_ is you don't need to change or edit the existing code, -->
-
 ### Liskov Substitution Principle
 
 ### Interface Segregation Principle
