@@ -18,7 +18,7 @@ SOLID is acronym 5 principles of:
 
 ### Single Responsibility Principle
 
-A class should have only one reason to change
+"A class should have only one reason to change"
 
 The statement above means that the class has only one responsibility or single job so every class has a specialty. Like waiters and chefs in the restaurant, they have specific responsibilities to each other. The waiter's responsibility is to gather the request from customers and put it in the note and send it to the kitchen. On the other side, the chef's responsibility is to the food based on the request from the waiter. The waiters and the chefs have different responsibilities, this is an example of _"Single responsibility principle"_.
 
@@ -98,7 +98,13 @@ class EmployeeSalaries {
 
 ### Open/Closed Principle
 
-Open/Closed principle has a statement `"software entities (classes, modules, functions, etc) should be open for extension, but closed for modification"`, the meaning of that statement is you can extend or copying the behavior of parent class but you cannot modify it.
+"Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"
+
+This principle ensures we do not change the existing code when we want to add a new feature, the alternative we can extends the code and make a new code with the parent code. Let's say you have a recipe for coffee and your employee wants to make a new variant by adding a topping to the coffee. The employee doesn't need to modify your coffee's recipe, he only needs to use your current recipe and add a new topping there. So, your cafe will have a new coffee variant without changing the parent recipe.
+
+Sometimes the functions or classes are already dependent on the other codes, if you want to change that function it will impact to the other's code. We can solve it with the _"Open/Closed principle"_. So, the benefit of implementing the _"Open/Closed principle"_ is you don't need to worry your change will impact the existing code. Because you only extend the existing code and make a new code with it.
+
+<!-- The benefit of implementing _"Open/Closed Principle"_ is you don't need to change or edit the existing code, -->
 
 ### Liskov Substitution Principle
 
