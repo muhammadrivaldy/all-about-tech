@@ -100,9 +100,35 @@ class EmployeeSalaries {
 
 Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
 
-This principle ensures we do not change the existing code when we want to add a new feature, the alternative we can extends the code and make a new code with the parent code. Let's say you have a recipe for coffee and your employee wants to make a new variant by adding a topping to the coffee. The employee doesn't need to modify your coffee's recipe, he only needs to use your current recipe and add a new topping there. So, your cafe will have a new coffee variant without changing the parent recipe.
+This principle ensures we do not change the existing code when we want to add a new feature, the alternative we can extends the code and make a new code with the parent code. Let's say you have a recipe for coffee and your employee wants to make a new variant by adding a topping to the coffee. The employee doesn't need to modify your coffee's recipe, he only needs to use your current recipe and add a new topping there. So, your cafe will have a new coffee variant without changing the main recipe.
 
 Sometimes the functions or classes are already dependent on the other codes, if you want to change that function it will impact to the other's code. We can solve it with the _"Open/Closed principle"_. So, the benefit of implementing the _"Open/Closed principle"_ is you don't need to worry your change will impact the existing code. Because you only extend the existing code and make a new code with it.
+
+#### Example
+
+```ts
+class Coffee {
+
+    public baseCoffee() {
+        // the process how to make a base coffee
+    }
+
+    public coffeeWithChocolate() {
+        // the process adding a topping
+    }
+
+}
+
+class MakeIt {
+
+    public make() {
+        // the process of make the coffee
+        coffee = new Coffee();
+        
+    }
+
+}
+```
 
 ### Liskov Substitution Principle
 
