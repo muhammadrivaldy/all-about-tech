@@ -2,21 +2,18 @@ class Coffee_BadExample {
 
     topping: string
 
-    constructor(topping: string) {
-        this.topping = topping
-    }
+    constructor(topping: string) { this.topping = topping }
 
-    public createCoffee(): void {
-        console.log("base coffee")
+    public createCoffee(): string {
 
-        if (this.topping == "chocolate") {
-            console.log("put chocolate topping to the coffee")
-        } else {
-            console.log("you're put wrong")
+        if (this.topping == "original") {
+            return "base coffee"
+        } else if (this.topping == "chocolate") {
+            return "base coffee and put chocolate as a coffee's topping"
         }
+
+        throw new Error("we don't have any coffee that you want!")
+
     }
 
 }
-
-var coffeeBad = new Coffee_BadExample("chocolate")
-coffeeBad.createCoffee()
