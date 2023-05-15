@@ -104,29 +104,43 @@ This principle ensures we do not change the existing code when we want to add a 
 
 Sometimes the functions or classes are already dependent on the other codes, if you want to change that function it will impact to the other's code. We can solve it with the _"Open/Closed principle"_. So, the benefit of implementing the _"Open/Closed principle"_ is you don't need to worry your change will impact the existing code. Because you only extend the existing code and make a new code with it.
 
-#### Example
+#### Bad implementation
 
-```ts
-class Coffee {
+``` ts
+class Coffee_BadExample {
 
-    public baseCoffee() {
-        // the process how to make a base coffee
-    }
+    topping: string
 
-    public coffeeWithChocolate() {
-        // the process adding a topping
+    constructor(topping: string) { this.topping = topping }
+
+    public createCoffee(): string {
+
+        if (this.topping == "original") {
+            return "base coffee"
+        } else if (this.topping == "chocolate") {
+            return "base coffee and put chocolate as a coffee's topping"
+        }
+
+        throw new Error("we don't have any coffee that you want!")
+
     }
 
 }
+```
 
-class MakeIt {
+#### Open/Closed implementation
 
-    public make() {
-        // the process of make the coffee
-        coffee = new Coffee();
-        
+```ts
+class CoffeeBase_GoodExample {
+    public createCoffee(): string {
+        return "base coffee"
     }
+}
 
+class CoffeeChocolate_GoodExample extends CoffeeBase_GoodExample {
+    public createCoffee(): string {
+        return super.createCoffee() + " and put chocolate as a coffee's topping"
+    }
 }
 ```
 
