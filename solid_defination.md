@@ -107,7 +107,7 @@ Sometimes the functions or classes are already dependent on the other codes, if 
 #### Bad implementation
 
 ``` ts
-class Coffee_BadExample {
+class Coffee {
 
     topping: string
 
@@ -131,13 +131,13 @@ class Coffee_BadExample {
 #### Open/Closed implementation
 
 ```ts
-class CoffeeBase_GoodExample {
+class Coffee {
     public createCoffee(): string {
         return "base coffee"
     }
 }
 
-class CoffeeChocolate_GoodExample extends CoffeeBase_GoodExample {
+class CoffeeChocolate extends Coffee {
     public createCoffee(): string {
         return super.createCoffee() + " and put chocolate as a coffee's topping"
     }
