@@ -107,7 +107,7 @@ Sometimes the functions or classes are already dependent on the other codes, if 
 #### Bad implementation
 
 ``` ts
-class Coffee_BadExample {
+class Coffee {
 
     topping: string
 
