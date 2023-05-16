@@ -107,7 +107,7 @@ Sometimes the functions or classes are already dependent on the other codes, if 
 #### Bad implementation
 
 ``` ts
-class Coffee {
+class Coffee_BadExample {
 
     topping: string
 
@@ -115,13 +115,13 @@ class Coffee {
 
     public createCoffee(): string {
 
-        if (this.topping == "original") {
-            return "base coffee"
-        } else if (this.topping == "chocolate") {
-            return "base coffee and put chocolate as a coffee's topping"
+        var coffee = "base coffee"
+
+        if (this.topping == "chocolate") {
+            coffee += " and put chocolate as a coffee's topping"
         }
 
-        throw new Error("we don't have any coffee that you want!")
+        return coffee
 
     }
 
@@ -146,6 +146,10 @@ class CoffeeChocolate extends Coffee {
 
 ### Liskov Substitution Principle
 
+Derived or child classes must be substitutable for their base or parent classes.
+
+The principle was introduces by Barbara Liskov in 1987.
+
 ### Interface Segregation Principle
 
 ### Dependency Inversion Principle
@@ -160,3 +164,4 @@ SOLID Principles for Programming and Software Design | <https://www.freecodecamp
 A Solid Guide to SOLID Principles | <https://www.baeldung.com/solid-principles>
 SOLID Design Principles Explained: Dependency Inversion Principle with Code Examples | <https://stackify.com/dependency-inversion-principle/>
 How To Use Open Closed Principle in PHP/Laravel | <https://mohasin-dev.medium.com/how-to-use-open-closed-principal-in-php-laravel-af4fa3b2a1c1>
+Applying SOLID principles to TypeScript | <https://blog.logrocket.com/applying-solid-principles-typescript/>

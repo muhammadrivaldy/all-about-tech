@@ -6,13 +6,13 @@ class Coffee_BadExample {
 
     public createCoffee(): string {
 
-        if (this.topping == "original") {
-            return "base coffee"
-        } else if (this.topping == "chocolate") {
-            return "base coffee and put chocolate as a coffee's topping"
+        var coffee = "base coffee"
+
+        if (this.topping == "chocolate") {
+            coffee += " and put chocolate as a coffee's topping"
         }
 
-        throw new Error("we don't have any coffee that you want!")
+        return coffee
 
     }
 
