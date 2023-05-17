@@ -122,30 +122,6 @@ class Coffee {
 
         if (this.topping == "chocolate") {
             coffee += " and put chocolate as a coffee's topping"
-        }
-
-        return coffee
-
-    }
-
-}
-```
-
-Based on the code above, if we want to add another variant we will change the class `Coffee`. It make the class `Coffee` not closed for changes.
-
-```ts
-class Coffee {
-
-    topping: string
-
-    constructor(topping: string) { this.topping = topping }
-
-    public createCoffee(): string {
-
-        var coffee = "base coffee"
-
-        if (this.topping == "chocolate") {
-            coffee += " and put chocolate as a coffee's topping"
         } else if (this.topping == "cheese") {
             coffee += " and put cheese as a coffee's topping"
         }
