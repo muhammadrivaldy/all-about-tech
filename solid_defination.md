@@ -159,9 +159,30 @@ class CoffeeCheese extends Coffee {
 
 Derived or child classes must be substitutable for their base or parent classes.
 
-The principle was introduces by Barbara Liskov in 1987.
+This principle was introduces by Barbara Liskov in 1987. The focus on this principle is make the object can be replaceable by other object with the same type. So the high-class doesn't need to know which child-class will be run inside of his class. So, the high-class still can run with the same behavior.
 
-T
+Let's make an example. We have a store with 2 employees and the employees will take turns looking after the store. The store can still running with one of them and the store doesn't need to know who person looks after it.
+
+#### Liskov substitution implementation
+
+```ts
+interface Employee {
+    selling()
+}
+
+class EmployeeJohn implements Employee {
+    public selling() {
+        console.log("selling by john")
+    }
+}
+
+class EmployeeRival implements Employee {
+    public selling() {
+        console.log("selling by rival")
+    }
+}
+```
+
 
 ### Interface Segregation Principle
 
