@@ -27,6 +27,7 @@ The benefit of implementing _"Single responsibility"_ is the class will have foc
 #### Bad Implementation
 
 ``` ts
+// This class is too general
 class Employee {
 
     private name: string;
@@ -59,7 +60,8 @@ class Employee {
 #### Single responsibility implementation
 
 ``` ts
-class Employee {
+// This class focus on the employee's detail
+class EmployeeDetail {
 
     private name: string;
     private address: string;
@@ -79,6 +81,7 @@ class Employee {
 
 }
 
+// This class focus on the employee's salary
 class EmployeeSalaries {
     
     private attendance: number;
@@ -102,11 +105,11 @@ Software entities (classes, modules, functions, etc.) should be open for extensi
 
 This principle ensures we do not change the existing code when we want to add a new feature, the alternative we can extends the code and make a new code with the parent code. Let's say you have a recipe for coffee and your employee wants to make a new variant by adding a topping to the coffee. The employee doesn't need to modify your coffee's recipe, he only needs to use your current recipe and add a new topping there. So, your cafe will have a new coffee variant without changing the main recipe.
 
-Sometimes the functions or classes are already dependent on the other codes, if you want to change that function it will impact to the other's code. We can solve it with the _"Open/Closed principle"_. So, the benefit of implementing the _"Open/Closed principle"_ is you don't need to worry your change will impact the existing code. Because you only extend the existing code and make a new code with it.
+Sometimes codes are dependent on each other, if you change the code it will impact to the other codes. We can solve it with the _"Open/Closed principle"_. So, the benefit of implementing the _"Open/Closed principle"_ is you don't need to worry your change will impact the existing code. Because you only extend the existing code and make a new code with it.
 
 #### Bad implementation
 
-``` ts
+```ts
 class Coffee {
 
     topping: string
@@ -119,6 +122,32 @@ class Coffee {
 
         if (this.topping == "chocolate") {
             coffee += " and put chocolate as a coffee's topping"
+        }
+
+        return coffee
+
+    }
+
+}
+```
+
+Based on the code above, if we want to add another variant we will change the class `Coffee`. It make the class `Coffee` not closed for changes.
+
+```ts
+class Coffee {
+
+    topping: string
+
+    constructor(topping: string) { this.topping = topping }
+
+    public createCoffee(): string {
+
+        var coffee = "base coffee"
+
+        if (this.topping == "chocolate") {
+            coffee += " and put chocolate as a coffee's topping"
+        } else if (this.topping == "cheese") {
+            coffee += " and put cheese as a coffee's topping"
         }
 
         return coffee
@@ -142,6 +171,12 @@ class CoffeeChocolate extends Coffee {
         return super.createCoffee() + " and put chocolate as a coffee's topping"
     }
 }
+
+class CoffeeCheese extends Coffee {
+    public createCoffee(): string {
+        return super.createCoffee() + " and put cheese as a coffee's topping"
+    }
+}
 ```
 
 ### Liskov Substitution Principle
@@ -149,6 +184,8 @@ class CoffeeChocolate extends Coffee {
 Derived or child classes must be substitutable for their base or parent classes.
 
 The principle was introduces by Barbara Liskov in 1987.
+
+T
 
 ### Interface Segregation Principle
 

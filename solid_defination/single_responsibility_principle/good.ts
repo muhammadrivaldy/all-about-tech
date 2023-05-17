@@ -1,4 +1,5 @@
-class Employee_GoodExample {
+// This class focus on the employee's detail
+class EmployeeDetail_GoodExample {
 
     private name: string;
     private address: string;
@@ -18,6 +19,7 @@ class Employee_GoodExample {
 
 }
 
+// This class focus on the employee's salary
 class EmployeeSalaries_GoodExample {
     
     private attendance: number;
