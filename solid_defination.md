@@ -220,19 +220,16 @@ class Fish implements Pond {
 #### Interface segregation implementation
 
 ```ts
-interface PondCatfish {
+interface PondBigFish {
     catfish(): void
-}
-
-interface PondSwordfish {
     swordfish(): void
 }
 
-interface PondSalmon {
+interface PondSmallFish {
     salmon(): void
 }
 
-class BigFish implements PondCatfish, PondSwordfish {
+class BigFish implements PondBigFish {
 
     public catfish(): void {
         // do something
@@ -244,7 +241,7 @@ class BigFish implements PondCatfish, PondSwordfish {
 
 }
 
-class SmallFish implements PondSalmon {
+class SmallFish implements PondSmallFish {
 
     public salmon(): void {
         // do something
