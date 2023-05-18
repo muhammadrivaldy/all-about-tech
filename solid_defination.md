@@ -24,7 +24,7 @@ The statement above means that the class has only one responsibility or single j
 
 The benefit of implementing _"Single responsibility"_ is the class will have focus. If you force the class to have more than one responsibility, it will make the developer confused because the class has many abilities. Let's make an example with `Typescript`. We will make a new class with the name _"Employee"_ that handles the employee's detail. This class has many responsibilities and we need to fix it with a _"Single responsibility principle"_ implementation.
 
-#### Bad Implementation
+#### Before implement single responsibility
 
 ``` ts
 // This class is too general
@@ -107,7 +107,7 @@ This principle ensures we do not change the existing code when we want to add a 
 
 Sometimes codes are dependent on each other, if you change the code it will impact to the other codes. We can solve it with the _"Open/Closed principle"_. So, the benefit of implementing the _"Open/Closed principle"_ is you don't need to worry your change will impact the existing code. Because you only extend the existing code and make a new code with it.
 
-#### Bad implementation
+#### Before implement open/closed
 
 ```ts
 class Coffee {
@@ -167,24 +167,92 @@ Let's make an example. We have a store with 2 employees and the employees will t
 
 ```ts
 interface Employee {
-    selling()
+    selling(): void
 }
 
 class EmployeeJohn implements Employee {
-    public selling() {
+    public selling(): void {
         console.log("selling by john")
     }
 }
 
 class EmployeeRival implements Employee {
-    public selling() {
+    public selling(): void {
         console.log("selling by rival")
     }
 }
 ```
 
-
 ### Interface Segregation Principle
+
+Do not force any client to implement an interface which is irrelevant to them.
+
+It is similar to the single responsibility, but the difference this approach is applies to the interface instead of classes. This principle focuses on separating the large interface into the small one. We need to avoid large interfaces to make the interface has one focus of responsibility.
+
+Let's say a seller has a pond with many fishes. If the buyer wants to buy a specific fish, it will be hard for the seller & buyer to searching a specific fish in the pond. To make it easier in the future, the seller needs to make other ponds and put every fish in a specific pond. Don't put two different fish in one pond.
+
+#### Before implement interface segregation
+
+```ts
+interface Pond {
+    catfish(): void
+    swordfish(): void
+    salmon(): void
+}
+
+class Fish implements Pond {
+
+    public catfish(): void {
+        // do something
+    }
+
+    public swordfish(): void {
+        // do something
+    }
+
+    public salmon(): void {
+        // do something
+    }
+
+}
+```
+
+#### Interface segregation implementation
+
+```ts
+interface PondCatfish {
+    catfish(): void
+}
+
+interface PondSwordfish {
+    swordfish(): void
+}
+
+interface PondSalmon {
+    salmon(): void
+}
+
+class BigFish implements PondCatfish, PondSwordfish {
+
+    public catfish(): void {
+        // do something
+    }
+
+    public swordfish(): void {
+        // do something
+    }
+
+}
+
+class SmallFish implements PondSalmon {
+
+    public salmon(): void {
+        // do something
+    }
+
+}
+
+```
 
 ### Dependency Inversion Principle
 
