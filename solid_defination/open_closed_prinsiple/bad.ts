@@ -1,4 +1,4 @@
-class Coffee_BadExample {
+class Coffee {
 
     topping: string
 

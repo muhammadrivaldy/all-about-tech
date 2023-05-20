@@ -18,7 +18,7 @@ class Car {
 
     constructor(private machine: Machine) { 
         if (!(machine as Machine)) {
-            throw new Error("the car can only receive an object that implements the Machine interface");
+            throw new Error("the Car can only receive an object that implements the Machine interface");
         }
     }
     

@@ -14,7 +14,7 @@ class Car {
 
     constructor(private machine: Machine1500CC) {
         if (machine instanceof Machine1500CC == false) {
-            throw new Error("the car is only able to receive Machine1500CC")
+            throw new Error("the Car is only able to receive Machine1500CC")
         }
     }
 

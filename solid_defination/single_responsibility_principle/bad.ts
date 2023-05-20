@@ -1,4 +1,4 @@
-class Employee_WrongExample {
+class Employee {
 
     private name: string;
     private address: string;
