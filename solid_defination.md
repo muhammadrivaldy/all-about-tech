@@ -338,6 +338,10 @@ var car = new Car(new Machine2000CC);
 car.startEngine() // output "start engine 2000 cc"
 ```
 
+## Conclusion
+
+Honestly, implementing SOLID principles will take more effort. On the other side, it will make your code easy to maintain & upgrade. All of the principles have a relation to each other, you cannot just implement only one of them.
+
 ## Reference
 
 Title | URL
