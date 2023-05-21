@@ -253,6 +253,91 @@ class SmallFish implements PondSmallFish {
 
 ### Dependency Inversion Principle
 
+The principle of dependency inversion refers to the decoupling of software modules.
+
+<!-- First of all, _"Dependency Injection"_ between _"Dependency Inversion"_ is different. You can check the below code to know the different of each other: -->
+
+First of all, _"Dependency Injection"_ between _"Dependency Inversion"_ is different. I will show you the difference later and let's focus on the Dependency Inversion's explanation.
+
+This principle focuses on how we can replace the object with another object without making the high-level class getting crash and the high-level class doesn't have a dependency on the low-level class. Both of them will depend on the interface or abstract class. Lemme give you an example the implementation of both of them.
+
+#### Dependency injection example
+
+```ts
+class Machine1500CC {
+    public startEngine(): void {
+        console.log("start engine 1500 cc")
+    }
+}
+
+class Machine2000CC {
+    public startEngine(): void {
+        console.log("start engine 2000 cc")
+    }
+}
+
+class Car {
+
+    constructor(private machine: Machine1500CC) {
+        if (machine instanceof Machine1500CC == false) {
+            throw new Error("the Car is only able to receive Machine1500CC")
+        }
+    }
+
+    public startEngine(): void {
+        this.machine.startEngine()
+    }
+    
+}
+
+var car = new Car(new Machine1500CC);
+car.startEngine() // output "start engine 1500 cc"
+
+var car = new Car(new Machine2000CC);
+car.startEngine() // will get an error because the parameter's type of Car is Machine1500CC
+```
+
+#### Dependency inversion example
+
+```ts
+interface Machine {
+    startEngine(): void
+}
+
+class Machine1500CC implements Machine {
+    public startEngine(): void {
+        console.log("start engine 1500 cc")
+    }
+}
+
+class Machine2000CC implements Machine {
+    public startEngine(): void {
+        console.log("start engine 2000 cc")
+    }
+}
+
+class Car {
+
+    constructor(private machine: Machine) { 
+        if (!(machine as Machine)) {
+            throw new Error("the Car can only receive an object that implements the Machine interface");
+        }
+    }
+    
+
+    public startEngine(): void {
+        this.machine.startEngine()
+    }
+    
+}
+
+var car = new Car(new Machine1500CC);
+car.startEngine() // output "start engine 1500 cc"
+
+var car = new Car(new Machine2000CC);
+car.startEngine() // output "start engine 2000 cc"
+```
+
 ## Reference
 
 Title | URL
