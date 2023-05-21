@@ -36,7 +36,7 @@ With Class Diagram we able to imagine the system as a blueprint. The blueprint w
 
 ---
 
-### [SOLID Definition](./solid_defination.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
+### [SOLID Definition](./solid_defination.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
 #### Overview SOLID Definition
 
