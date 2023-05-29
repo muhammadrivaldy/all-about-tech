@@ -1,18 +1,22 @@
-# Design Pattern
+# Design Patterns
 
 ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
 ## Overview
 
-Design pattern is a solution to solving a common problem in software design. It's not only to solve one case, design patterns are coverage many cases in software design. You can use it as a blueprint, so it will be helping you to develop your code with a pattern. Design patterns are concepts, you cannot copy them into your program without an adjustment.
+Design patterns is a solution to solving a common problem in software design. It's not only to solve one case, design patterns are coverage many cases in software design. You can use it as a blueprint, so it will be helping you to develop your code with a pattern. Design patterns are concepts, you cannot copy them into your program without an adjustment.
 
 ## Why we need to know?
 
-Design patterns will help you and your team to develop good code and you can know the code from your teammates easily. This approach will help you to create a code that is maintainable, reusable, & readable.
+Design patterns will help you and your team to develop good code and you can know the code from your teammates easily. This approach will help you to create a code that is maintainable, reusable, & readable. Learning these patterns helps unexperienced developers to learn software design in easy way and faster way.
 
-## Various of Design Pattern
+## Various of Design Patterns
 
-### Creational Pattern
+### Creational Patterns
+
+The creational patterns are focused on how to create objects and the client doesn't need to know how the logic has been made. This approach will be decoupling the object from the code and make your code more maintainable and extensible.
+
+These patterns will be divided into:
 
 * #### Factory Method
 
@@ -75,3 +79,5 @@ Design Patterns | <https://refactoring.guru/design-patterns>
 Design Pattern untuk Pembuatan Perangkat Lunak | <https://www.dicoding.com/blog/design-pattern/>
 Factory patterns in Go (Golang) | <https://www.sohamkamani.com/golang/2018-06-20-golang-factory-patterns/>
 Desing Patterns in Golang: Factory Method | <https://blog.ralch.com/articles/design-patterns/golang-factory-method/>
+Design Pattern - Overview | <https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm>
+Design Patterns | <https://sourcemaking.com/design_patterns>
