@@ -22,7 +22,39 @@ These patterns will be divided into:
 
   ![Factory](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
 
-  The factory method declared the interface, and then the interface will be represented by the child classes. So, with this pattern, we can create an object with one, two, or more different child class with a similar behavior.
+  The factory method will help you to make an object with an interface and the client doesn't need to know how the creation logic works. This approach will help you to extend your feature without any pain.
+
+  An example, you expect your garden will maintain today and you do not care who person will maintain your garden. Based on that case, you can use the factory method. Because you only expect the garden will maintain by the gardener without thinking about who it is. And the gardener can be handled by A or B person.
+
+  Let's making the code's example based on above case.
+
+  **Step 1:** Create the interface first and that interface will implements by A person & B person.
+
+  ```ts
+  interface Gardener {
+    maintain(): void
+  }
+
+  class APerson implements Gardener {
+    public function maintain(): void {
+      // B persons do something
+    }
+  }
+
+  class BPerson implements Gardener {
+    public function maintain(): void {
+      // B persons do something
+    }
+  }
+  ```
+
+  **Step 2:** Create the factory & creator classes
+
+  ```ts
+  class GardenerFactory {
+    abstract gardener
+  }
+  ```
 
 * #### Abstract Factory
 
