@@ -90,7 +90,7 @@ These patterns will be divided into:
   **Step 4:** Create the client class
 
   ```ts
-  class Main {
+  class Client {
 
       constructor(person: string) {
 
@@ -109,7 +109,7 @@ These patterns will be divided into:
       }
   }
 
-  new Main("A")
+  new Client("A")
   ```
 
 * #### Abstract Factory

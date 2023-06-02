@@ -45,7 +45,7 @@ class CreatorBPerson extends FactoryGardener {
     }
 }
 
-class Main {
+class Client {
 
     constructor(person: string) {
 
@@ -64,4 +64,4 @@ class Main {
     }
 }
 
-new Main("A")
+new Client("A")
