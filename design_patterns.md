@@ -32,28 +32,84 @@ These patterns will be divided into:
 
   ```ts
   interface Gardener {
-    maintain(): void
+      maintain(): void
+      watering(): void
   }
 
   class APerson implements Gardener {
-    public function maintain(): void {
-      // B persons do something
-    }
+      public maintain(): void {
+          console.log("A person maintain garden")
+      }
+
+      public watering(): void {
+          console.log("A person watering garden")
+      }
   }
 
   class BPerson implements Gardener {
-    public function maintain(): void {
-      // B persons do something
-    }
+      public maintain(): void {
+          console.log("B person maintain garden")
+      }
+
+      public watering(): void {
+          console.log("B person watering garden")
+      }
   }
   ```
 
-  **Step 2:** Create the factory & creator classes
+  **Step 2:** Create the abstract factory
 
   ```ts
-  class GardenerFactory {
-    abstract gardener
+  abstract class FactoryGardener {
+      abstract createPerson(): Gardener
+
+      public gardener(): void {
+          var person = this.createPerson()
+          person.maintain()
+          person.watering()
+      }
   }
+  ```
+
+  **Step 3:** Create the creator class of A & B persons
+
+  ```ts
+  class CreatorAPerson extends FactoryGardener {
+      public createPerson(): Gardener {
+          return new APerson
+      }
+  }
+
+  class CreatorBPerson extends FactoryGardener {
+      public createPerson(): Gardener {
+          return new BPerson
+      }
+  }
+  ```
+
+  **Step 4:** Create the client class
+
+  ```ts
+  class Main {
+
+      constructor(person: string) {
+
+          var gardener: FactoryGardener;
+
+          if (person == "A") {
+              gardener = new CreatorAPerson
+          } else if (person == "B") {
+              gardener = new CreatorBPerson
+          } else {
+              throw Error("Undefined")
+          }
+
+          gardener.gardener()
+
+      }
+  }
+
+  new Main("A")
   ```
 
 * #### Abstract Factory
