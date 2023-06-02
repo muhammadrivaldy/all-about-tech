@@ -118,7 +118,7 @@ These patterns will be divided into:
 
   The abstract factory is a common pattern that you implement in the project. This pattern can be called a factory of factories because the focus of this pattern is to produce families of related objects without specifying their concrete classes.
 
-  An example, you have the Nissan factory and I have the Toyota factory. Both of us want to make a new car with similar types. The types of cars that we want to create involve Coupes, Crossovers, & Hatchbacks.
+  An example, you have the Nissan factory and I have the Toyota factory. Both of us want to make a new car with similar types. The types of cars that we want to create involve Coupes & Crossovers.
 
   Let's making the code's example based on above case.
 
