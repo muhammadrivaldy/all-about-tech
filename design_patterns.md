@@ -114,9 +114,9 @@ These patterns will be divided into:
 
 * #### Abstract Factory
 
-  The abstract factory is a common pattern that you implement in the project. This pattern can be called a factory of factories because the focus of this pattern is to produce families of related objects without specifying their concrete classes.
+  ![Factory](https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure-2x.png)
 
-  <!-- An example, you have Nissan factory and I have Toyota factory. Both of us want to make a new car and our car has similar feature. -->
+  The abstract factory is a common pattern that you implement in the project. This pattern can be called a factory of factories because the focus of this pattern is to produce families of related objects without specifying their concrete classes.
 
   An example, you have the Nissan factory and I have the Toyota factory. Both of us want to make a new car with similar types. The types of cars that we want to create involve Coupes, Crossovers, & Hatchbacks.
 
