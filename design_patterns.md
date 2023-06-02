@@ -57,7 +57,7 @@ These patterns will be divided into:
   }
   ```
 
-  **Step 2:** Create the abstract factory
+  **Step 2:** Create the factory
 
   ```ts
   abstract class FactoryGardener {
