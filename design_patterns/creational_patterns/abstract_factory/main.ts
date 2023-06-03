@@ -47,11 +47,11 @@ class ToyotaFactory implements AbstractFactory {
 
 class NissanFactory implements AbstractFactory {
     public coupes(): Coupes {
-        return new NissanCoupes    
+        return new NissanCoupes()  
     }
 
     public crossovers(): Crossovers {
-        return new NissanCrossovers
+        return new NissanCrossovers()
     }
 }
 

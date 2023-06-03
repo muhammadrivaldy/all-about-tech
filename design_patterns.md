@@ -31,85 +31,85 @@ These patterns will be divided into:
   **Step 1:** Create the interface first and that interface will implements by A & B persons.
 
   ```ts
-  interface Gardener {
-      maintain(): void
-      watering(): void
-  }
+    interface Gardener {
+        maintain(): void
+        watering(): void
+    }
 
-  class APerson implements Gardener {
-      public maintain(): void {
-          console.log("A person maintain garden")
-      }
+    class APerson implements Gardener {
+        public maintain(): void {
+            console.log("A person maintain garden")
+        }
 
-      public watering(): void {
-          console.log("A person watering garden")
-      }
-  }
+        public watering(): void {
+            console.log("A person watering garden")
+        }
+    }
 
-  class BPerson implements Gardener {
-      public maintain(): void {
-          console.log("B person maintain garden")
-      }
+    class BPerson implements Gardener {
+        public maintain(): void {
+            console.log("B person maintain garden")
+        }
 
-      public watering(): void {
-          console.log("B person watering garden")
-      }
-  }
+        public watering(): void {
+            console.log("B person watering garden")
+        }
+    }
   ```
 
   **Step 2:** Create the factory
 
   ```ts
-  abstract class FactoryGardener {
-      abstract createPerson(): Gardener
+    abstract class FactoryGardener {
+        abstract createPerson(): Gardener
 
-      public gardener(): void {
-          var person = this.createPerson()
-          person.maintain()
-          person.watering()
-      }
-  }
+        public gardener(): void {
+            var person = this.createPerson()
+            person.maintain()
+            person.watering()
+        }
+    }
   ```
 
   **Step 3:** Create the creator class of A & B persons
 
   ```ts
-  class CreatorAPerson extends FactoryGardener {
-      public createPerson(): Gardener {
-          return new APerson
-      }
-  }
+    class CreatorAPerson extends FactoryGardener {
+        public createPerson(): Gardener {
+            return new APerson
+        }
+    }
 
-  class CreatorBPerson extends FactoryGardener {
-      public createPerson(): Gardener {
-          return new BPerson
-      }
-  }
+    class CreatorBPerson extends FactoryGardener {
+        public createPerson(): Gardener {
+            return new BPerson
+        }
+    }
   ```
 
   **Step 4:** Create the client class
 
   ```ts
-  class Client {
+    class Client {
 
-      constructor(person: string) {
+        constructor(person: string) {
 
-          var gardener: FactoryGardener;
+            var gardener: FactoryGardener;
 
-          if (person == "A") {
-              gardener = new CreatorAPerson
-          } else if (person == "B") {
-              gardener = new CreatorBPerson
-          } else {
-              throw Error("Undefined")
-          }
+            if (person == "A") {
+                gardener = new CreatorAPerson
+            } else if (person == "B") {
+                gardener = new CreatorBPerson
+            } else {
+                throw Error("Undefined")
+            }
 
-          gardener.gardener()
+            gardener.gardener()
 
-      }
-  }
+        }
+    }
 
-  new Client("A")
+    new Client("A")
   ```
 
 * #### Abstract Factory
@@ -121,6 +121,107 @@ These patterns will be divided into:
   An example, you have the Nissan factory and I have the Toyota factory. Both of us want to make a new car with similar types. The types of cars that we want to create involve Coupes & Crossovers.
 
   Let's making the code's example based on above case.
+
+  **Step 1:** Create the abstract product, it means I create abstract class for Coupes & Crossovers. At this moment, it's okay if you want to use interface rather than abstract class.
+
+  ```ts
+    abstract class Coupes {
+        abstract makeCoupes(): void
+    }
+
+    abstract class Crossovers {
+        abstract makeCrossovers(): void
+    }
+  ```
+
+  **Step 2:** Create the concrete product based on the abstract or interface that you create in the step 1. The class will define the method based on that.
+
+  ```ts
+    class ToyotaCoupes extends Coupes {
+        public makeCoupes(): void {
+            console.log("Toyota make coupes")
+        }
+    }
+    
+    class NissanCoupes extends Coupes {
+        public makeCoupes(): void {
+            console.log("Nissan make coupes")
+        }
+    }
+
+    class ToyotaCrossovers extends Crossovers {
+        public makeCrossovers(): void {
+            console.log("Toyota make crossovers")
+        }
+    }
+
+    class NissanCrossovers extends Crossovers {
+        public makeCrossovers(): void {
+            console.log("Nissan make crossovers")
+        }
+    }
+  ```
+
+  **Step 3:** Create the abstract factory interface. This interface will implements by the Toyota & Nissan factories.
+
+  ```ts
+    interface AbstractFactory {
+        coupes(): Coupes
+        crossovers(): Crossovers
+    }
+  ```
+
+  **Step 4:** Create the concrete factory. This class will implements the interface from `AbstractFactory` and depends to concrete products.
+
+  ```ts
+    class ToyotaFactory implements AbstractFactory {
+        public coupes(): Coupes {
+            return new ToyotaCoupes()
+        }
+
+        public crossovers(): Crossovers {
+            return new ToyotaCrossovers()
+        }
+    }
+
+    class NissanFactory implements AbstractFactory {
+        public coupes(): Coupes {
+            return new NissanCoupes()  
+        }
+
+        public crossovers(): Crossovers {
+            return new NissanCrossovers()
+        }
+    }
+  ```
+
+  **Step 5:** And the last step is create a client class that have a dependency inversion into the abstract factory interface.
+
+  ```ts
+    class Client {
+        private factory: AbstractFactory
+
+        constructor(factory: AbstractFactory) { 
+            this.factory = factory
+        }
+
+        public makeCoupes(): Coupes {
+            return this.factory.coupes()
+        }
+
+        public makeCrossovers(): Crossovers {
+            return this.factory.crossovers()
+        }
+    }
+
+    var client = new Client(new NissanFactory)
+
+    var coupes = client.makeCoupes()
+    coupes.makeCoupes()
+
+    var crossovers = client.makeCrossovers()
+    crossovers.makeCrossovers()
+  ```
 
 * #### Builder
 
