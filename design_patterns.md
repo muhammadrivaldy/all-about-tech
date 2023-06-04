@@ -229,7 +229,7 @@ These patterns will be divided into:
   
   The builder is a pattern to split your complex object into a step-by-step approach. This pattern suggests extracting the construction to separate objects called builders. So the builder class will independent itself.
 
-  An example, if you wanna make an object called a Car. You need to make a step-by-step to complete the car's construction. You need to make a chassis, engine, body, etc. And other times, you need to make the same object car but with car's variants.
+  An example, if you wanna make an object called a Car. You need to make a step-by-step to complete the car's construction. You need to make a chassis, engine cylinder, body, etc. And other times, you need to make the same object car but with car's variants.
 
   <!-- Let's making the code's example based on above case. -->
 
