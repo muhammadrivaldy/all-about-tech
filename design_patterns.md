@@ -224,6 +224,8 @@ These patterns will be divided into:
   ```
 
 * #### Builder
+  
+  The builder is a pattern to make your complex object
 
 * #### Prototype
 
