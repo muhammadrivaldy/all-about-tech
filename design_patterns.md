@@ -231,7 +231,125 @@ These patterns will be divided into:
 
   An example, if you wanna make an object called a Car. You need to make a step-by-step to complete the car's construction. You need to make a chassis, engine cylinder, body, etc. And other times, you need to make the same object car but with car's variants.
 
-  <!-- Let's making the code's example based on above case. -->
+  Let's making the code's example based on above case.
+
+  **Step 1:** Create a `Car` class, this class is a complex object that we want to solved with the builder pattern.
+
+  ```ts
+    class Car {
+
+        public chassis: string
+        public engineCylinder: number
+        public body: string
+        public variant: string
+
+        constructor() {
+            this.chassis = ""
+            this.engineCylinder = 0
+            this.body = ""
+            this.variant = ""
+        }
+
+    }
+  ```
+
+  **Step 2:** Create a `Builder` class & interface, this is the most important thing in the builder pattern. Because those class & interface will help a `Car` class to make an object step-by-step.
+
+  ```ts
+    interface Builder {
+        reset(): any
+        buildChassis(): any
+        buildEngineCylinder(cylinder: number): any
+        buildBody(): any
+        buildSportVariant(): any
+    }
+
+    class CarBuilder implements Builder {
+
+        private car: Car
+
+        constructor() {
+            this.car = new Car()
+        }
+        
+        public reset(): any {
+            this.car = new Car()
+            return this
+        }
+
+        public buildChassis(): any {
+            this.car.chassis = "Standard Chassis"
+            return this 
+        }
+
+        public buildEngineCylinder(engineCylinder: number) {
+            this.car.engineCylinder = engineCylinder
+            return this
+        }
+
+        public buildBody() {
+            this.car.body = "Standard Body"
+            return this
+        }
+
+        public buildSportVariant() {
+            this.car.variant = "Sport Variant"
+            return this
+        }
+
+        public getResult(): Car {
+            return this.car
+        }
+
+    }
+  ```
+
+  **Step 3:** Create a `Director` class, this class has a role as a runner of the builder.
+
+ ```ts
+    class Director {
+
+        private builder: Builder
+
+        constructor(builder: Builder) {
+            this.builder = builder
+        }
+
+        public makeStandardCar() {
+            this.builder.reset().
+                buildChassis().
+                buildEngineCylinder(3).
+                buildBody()
+        }
+
+        public makeSportCar() {
+            this.builder.reset().
+                buildChassis().
+                buildEngineCylinder(6).
+                buildBody().
+                buildSportVariant()
+        }
+
+    }
+ ```
+
+ **Step 4:** Create a Client class, this client class will handle the dependency process and running the code.
+
+ ```ts
+    class Client {
+
+        constructor() {
+            var builder = new CarBuilder()
+            var director = new Director(builder)
+            director.makeSportCar()
+            var result = builder.getResult()
+            console.log(JSON.stringify(result))
+        }
+
+    }
+
+    new Client
+ ```
 
 * #### Prototype
 
