@@ -1,5 +1,4 @@
 class Car {
-
     public chassis: string
     public engineCylinder: number
     public body: string
@@ -11,7 +10,6 @@ class Car {
         this.body = ""
         this.variant = ""
     }
-
 }
 
 interface Builder {
@@ -23,7 +21,6 @@ interface Builder {
 }
 
 class CarBuilder implements Builder {
-
     private car: Car
 
     constructor() {
@@ -58,11 +55,9 @@ class CarBuilder implements Builder {
     public getResult(): Car {
         return this.car
     }
-
 }
 
 class Director {
-
     private builder: Builder
 
     constructor(builder: Builder) {
@@ -83,11 +78,9 @@ class Director {
             buildBody().
             buildSportVariant()
     }
-
 }
 
 class Client {
-
     constructor() {
         var builder = new CarBuilder()
         var director = new Director(builder)
@@ -95,7 +88,6 @@ class Client {
         var result = builder.getResult()
         console.log(JSON.stringify(result))
     }
-
 }
 
 new Client

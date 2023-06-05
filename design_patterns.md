@@ -237,7 +237,6 @@ These patterns will be divided into:
 
   ```ts
     class Car {
-
         public chassis: string
         public engineCylinder: number
         public body: string
@@ -249,7 +248,6 @@ These patterns will be divided into:
             this.body = ""
             this.variant = ""
         }
-
     }
   ```
 
@@ -265,7 +263,6 @@ These patterns will be divided into:
     }
 
     class CarBuilder implements Builder {
-
         private car: Car
 
         constructor() {
@@ -300,7 +297,6 @@ These patterns will be divided into:
         public getResult(): Car {
             return this.car
         }
-
     }
   ```
 
@@ -308,7 +304,6 @@ These patterns will be divided into:
 
  ```ts
     class Director {
-
         private builder: Builder
 
         constructor(builder: Builder) {
@@ -329,7 +324,6 @@ These patterns will be divided into:
                 buildBody().
                 buildSportVariant()
         }
-
     }
  ```
 
@@ -337,7 +331,6 @@ These patterns will be divided into:
 
  ```ts
     class Client {
-
         constructor() {
             var builder = new CarBuilder()
             var director = new Director(builder)
@@ -345,7 +338,6 @@ These patterns will be divided into:
             var result = builder.getResult()
             console.log(JSON.stringify(result))
         }
-
     }
 
     new Client
