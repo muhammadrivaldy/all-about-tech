@@ -302,7 +302,7 @@ These patterns will be divided into:
 
   **Step 3:** Create a `Director` class, this class has a role as a runner of the builder.
 
- ```ts
+  ```ts
     class Director {
         private builder: Builder
 
@@ -325,23 +325,23 @@ These patterns will be divided into:
                 buildSportVariant()
         }
     }
- ```
+  ```
 
- **Step 4:** Create a Client class, this client class will handle the dependency process and running the code.
+  **Step 4:** Create a Client class, this client class will handle the dependency process and running the code.
 
- ```ts
-    class Client {
-        constructor() {
-            var builder = new CarBuilder()
-            var director = new Director(builder)
-            director.makeSportCar()
-            var result = builder.getResult()
-            console.log(JSON.stringify(result))
-        }
-    }
+  ```ts
+     class Client {
+         constructor() {
+             var builder = new CarBuilder()
+             var director = new Director(builder)
+             director.makeSportCar()
+             var result = builder.getResult()
+             console.log(JSON.stringify(result))
+         }
+     }
 
-    new Client
- ```
+     new Client
+  ```
 
 * #### Prototype
 
