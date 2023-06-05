@@ -349,7 +349,72 @@ These patterns will be divided into:
   
   The prototype is a pattern that helps you to copy the existing object without any dependence on the classes. Let's say you have an object and you want to copy the object, how do you do that? Maybe you will create another object and copy the attribute one by one. That is bad practice to copy the object. Prototype pattern will helps you to copy the object easily.
 
-  <!-- Let's making the code's example based on above case. -->
+  Let's making the code's example based on above case.
+
+  **Step 1:** Create the interface that includes the clone method, the clone method is mandatory for cloning the object. The clone method is the main thing of the prototype pattern.
+
+  ```ts
+    interface PrototypeStudent {
+        setName(name: string): void
+        setGrade(grade: number): void
+        getName(): string
+        getGrade(): number
+        clone(): PrototypeStudent
+    }
+  ```
+
+  **Step 2:** Implement the interface
+
+  ```ts
+    class Student implements PrototypeStudent {
+        private name: string
+        private grade: number
+
+        constructor(name: string, grade: number) {
+            this.name = name
+            this.grade = grade
+        }
+
+        public setName(name: string): void {
+            this.name = name
+        }
+
+        public setGrade(grade: number): void {
+            this.grade = grade
+        }
+
+        public getName(): string {
+            return this.name
+        }
+
+        public getGrade(): number {
+            return this.grade
+        }
+
+        public clone(): PrototypeStudent {
+            return new Student(this.name, this.grade)
+        }
+    }
+  ```
+
+  **Step 3:** This is the final step, the client copies the object without any pain to copy it.
+
+  ```ts
+    class Client {
+        constructor() {
+            var studentA = new Student("student A", 9)
+            var studentB = studentA.clone()
+
+            studentB.setName("student B")
+            studentB.setGrade(4)
+
+            console.log(JSON.stringify(studentA)) // Output: {"name":"student A","grade":9}
+            console.log(JSON.stringify(studentB)) // Output: {"name":"student B","grade":4}
+        }
+    }
+
+    new Client
+  ```
 
 * #### Singleton
 
