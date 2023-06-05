@@ -1,28 +1,21 @@
 class Car {
-    private chassis: string
-    private engineCylinder: number
-    private body: string
-    private variant: string
 
-    public setChassis(chassis: string): void {
-        this.chassis = chassis
+    public chassis: string
+    public engineCylinder: number
+    public body: string
+    public variant: string
+
+    constructor() {
+        this.chassis = ""
+        this.engineCylinder = 0
+        this.body = ""
+        this.variant = ""
     }
 
-    public setEngineCylinder(engineCylinder: number): void {
-        this.engineCylinder = engineCylinder
-    }
-
-    public setBody(body: string): void {
-        this.body = body
-    }
-
-    public setVariant(variant: string): void {
-        this.variant = variant
-    }
 }
 
 interface Builder {
-    reset(): void
+    reset(): any
     buildChassis(): any
     buildEngineCylinder(cylinder: number): any
     buildBody(): any
@@ -30,56 +23,79 @@ interface Builder {
 }
 
 class CarBuilder implements Builder {
+
     private car: Car
-    
-    public reset(): void {
+
+    constructor() {
         this.car = new Car()
+    }
+    
+    public reset(): any {
+        this.car = new Car()
+        return this
     }
 
     public buildChassis(): any {
-        this.car.setChassis("Standard Chassis")
+        this.car.chassis = "Standard Chassis"
         return this 
     }
 
     public buildEngineCylinder(engineCylinder: number) {
-        this.car.setEngineCylinder(engineCylinder)
+        this.car.engineCylinder = engineCylinder
         return this
     }
 
     public buildBody() {
-        this.car.setBody("Standard Body")
+        this.car.body = "Standard Body"
         return this
     }
 
     public buildSportVariant() {
-        this.car.setVariant("Sport Variant")
+        this.car.variant = "Sport Variant"
         return this
     }
 
     public getResult(): Car {
         return this.car
     }
+
 }
 
 class Director {
+
     private builder: Builder
 
     constructor(builder: Builder) {
         this.builder = builder
     }
 
-    public buildStandardCar() {
-        this.builder.reset()
-        this.builder.buildChassis().
+    public makeStandardCar() {
+        this.builder.reset().
+            buildChassis().
             buildEngineCylinder(3).
             buildBody()
     }
 
-    public buildSportCar() {
-        this.builder.reset()
-        this.builder.buildChassis().
+    public makeSportCar() {
+        this.builder.reset().
+            buildChassis().
             buildEngineCylinder(6).
             buildBody().
             buildSportVariant()
     }
+
 }
+
+class Client {
+
+    constructor() {
+        var builder = new CarBuilder()
+        var director = new Director(builder)
+        director.makeSportCar()
+        var result = builder.getResult()
+        console.log(JSON.stringify(result))
+    }
+
+}
+
+new Client
