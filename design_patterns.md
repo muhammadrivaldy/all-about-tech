@@ -344,6 +344,10 @@ These patterns will be divided into:
   ```
 
 * #### Prototype
+  
+  The prototype is a pattern that helps you to copy the existing object without any dependence on the classes. Let's say you have an object and you want to copy the object, how do you do that? Maybe you will create another object and copy the attribute one by one. That is bad practice to copy the object. Prototype pattern will helps you to copy the object easily.
+
+  <!-- Let's making the code's example based on above case. -->
 
 * #### Singleton
 
