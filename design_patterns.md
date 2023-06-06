@@ -462,8 +462,5 @@ Title | URL
 ---|---
 Chat GPT | <https://chat.openai.com/chat>
 Design Patterns | <https://refactoring.guru/design-patterns>
-Design Pattern untuk Pembuatan Perangkat Lunak | <https://www.dicoding.com/blog/design-pattern/>
-Factory patterns in Go (Golang) | <https://www.sohamkamani.com/golang/2018-06-20-golang-factory-patterns/>
-Desing Patterns in Golang: Factory Method | <https://blog.ralch.com/articles/design-patterns/golang-factory-method/>
 Design Pattern - Overview | <https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm>
 Design Patterns | <https://sourcemaking.com/design_patterns>
