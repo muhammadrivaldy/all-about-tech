@@ -417,6 +417,10 @@ These patterns will be divided into:
   ```
 
 * #### Singleton
+  
+  The singleton pattern is focused on making sure you only have one instance and sharing the instance for global access. This pattern is applicable to your program which should have a single instance.
+
+  <!-- Let's making the code's example based on above case. -->
 
 ### Structural Pattern
 
