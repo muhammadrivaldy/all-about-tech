@@ -490,3 +490,4 @@ Chat GPT | <https://chat.openai.com/chat>
 Design Patterns | <https://refactoring.guru/design-patterns>
 Design Pattern - Overview | <https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm>
 Design Patterns | <https://sourcemaking.com/design_patterns>
+Design Pattern untuk Pembuatan Perangkat Lunak | <https://www.dicoding.com/blog/design-pattern>
