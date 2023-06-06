@@ -420,7 +420,29 @@ These patterns will be divided into:
   
   The singleton pattern is focused on making sure you only have one instance and sharing the instance for global access. This pattern is applicable to your program which should have a single instance.
 
-  <!-- Let's making the code's example based on above case. -->
+  Let's making the code's example based on above case.
+
+  ```ts
+    class Database {
+        private static instance: Database
+
+        private constructor() {}
+
+        public static getInstance(): Database {
+            if (!Database.instance) {
+                Database.instance = new Database()
+            }
+            return Database.instance
+        }
+
+        public doSomething() {
+            console.log("Doing something...")
+        }
+    }
+
+    const databaseInstance = Database.getInstance()
+    databaseInstance.doSomething()
+  ```
 
 ### Structural Pattern
 
