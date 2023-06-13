@@ -450,9 +450,13 @@ These patterns will be divided into:
   
   ![Adapter](https://refactoring.guru/images/patterns/diagrams/adapter/structure-object-adapter.png)
   
-  The adapter pattern is part of structural pattern that focus on help an object to communicate with incompatible interfaces to collaborate. In the real case example, when you travel from Indonesia to Europe you may get a surprise when trying to charge your phone. The power plug and sockets standards are different. So, you need a plug adaptor to charge your phone.
+  The adapter pattern focuses on helping an object to communicate with incompatible interfaces to collaborate. In the real case example, when you travel from Indonesia to Europe you may get a surprise when trying to charge your phone. The power plug and sockets standards are different. So, you need a plug adaptor to charge your phone.
 
 * #### Bridge
+  
+  ![Bridge](https://refactoring.guru/images/patterns/diagrams/bridge/structure-en.png)
+  
+  The bridge pattern focuses on separating the large class into several hierarchies. The bridge's concept is a combination of the single responsibility and dependency inversion in SOLID principles. Basically, if you already learn `Creational Pattern` you will find any bridge implementation in the code's example.
 
 * #### Composite
 
