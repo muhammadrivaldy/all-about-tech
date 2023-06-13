@@ -447,6 +447,8 @@ These patterns will be divided into:
 ### Structural Pattern
 
 * #### Adapter
+  
+  The adapter pattern is part of structural pattern that focus on help an object to communicate with incompatible interfaces to collaborate. In the real case example, when you travel from Indonesia to Europe you may get a surprise when trying to charge your phone. The power plug and sockets standards are different. So, you need a plug adaptor to charge your phone.
 
 * #### Bridge
 
