@@ -2,6 +2,40 @@
 
 ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
+## Article Framework
+
+- [Design Patterns](#design-patterns)
+  - [Article Framework](#article-framework)
+  - [Overview](#overview)
+  - [Why we need to know?](#why-we-need-to-know)
+  - [Various of Design Patterns](#various-of-design-patterns)
+    - [Creational Patterns](#creational-patterns)
+      - [Factory Method](#factory-method)
+      - [Abstract Factory](#abstract-factory)
+      - [Builder](#builder)
+      - [Prototype](#prototype)
+      - [Singleton](#singleton)
+    - [Structural Patterns](#structural-patterns)
+      - [Adapter](#adapter)
+      - [Bridge](#bridge)
+      - [Composite](#composite)
+      - [Decorator](#decorator)
+      - [Facade](#facade)
+      - [Flyweight](#flyweight)
+      - [Proxy](#proxy)
+    - [Behavioral Pattern](#behavioral-pattern)
+      - [Chain of Responsibility](#chain-of-responsibility)
+      - [Command](#command)
+      - [Iterator](#iterator)
+      - [Mediator](#mediator)
+      - [Memento](#memento)
+      - [Observer](#observer)
+      - [State](#state)
+      - [Strategy](#strategy)
+      - [Template Method](#template-method)
+      - [Visitor](#visitor)
+  - [Reference](#reference)
+
 ## Overview
 
 Design patterns is a solution to solving a common problem in software design. It's not only to solve one case, design patterns are coverage many cases in software design. You can use it as a blueprint, so it will be helping you to develop your code with a pattern. Design patterns are concepts, you cannot copy them into your program without an adjustment.
@@ -18,485 +52,485 @@ The creational patterns are focused on how to create objects and the client does
 
 These patterns will be divided into:
 
-* #### Factory Method
+#### Factory Method
 
-  ![Factory](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
+![Factory](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
 
-  The factory method will help you to make an object with an interface and the client doesn't need to know how the creation logic works. This approach will help you to extend your feature without any pain.
+The factory method will help you to make an object with an interface and the client doesn't need to know how the creation logic works. This approach will help you to extend your feature without any pain.
 
-  An example, you expect your garden will maintain today and you do not care who person will maintain your garden. Based on that case, you can use the factory method. Because you only expect the garden will maintain by the gardener without thinking about who it is. And the gardener can be handled by A or B persons.
+An example, you expect your garden will maintain today and you do not care who person will maintain your garden. Based on that case, you can use the factory method. Because you only expect the garden will maintain by the gardener without thinking about who it is. And the gardener can be handled by A or B persons.
 
-  Let's making the code's example based on above case.
+Let's making the code's example based on above case.
 
-  **Step 1:** Create the interface first and that interface will implements by A & B persons.
+**Step 1:** Create the interface first and that interface will implements by A & B persons.
 
-  ```ts
-    interface Gardener {
-        maintain(): void
-        watering(): void
+```ts
+interface Gardener {
+    maintain(): void
+    watering(): void
+}
+
+class APerson implements Gardener {
+    public maintain(): void {
+        console.log("A person maintain garden")
     }
 
-    class APerson implements Gardener {
-        public maintain(): void {
-            console.log("A person maintain garden")
-        }
+    public watering(): void {
+        console.log("A person watering garden")
+    }
+}
 
-        public watering(): void {
-            console.log("A person watering garden")
-        }
+class BPerson implements Gardener {
+    public maintain(): void {
+        console.log("B person maintain garden")
     }
 
-    class BPerson implements Gardener {
-        public maintain(): void {
-            console.log("B person maintain garden")
+    public watering(): void {
+        console.log("B person watering garden")
+    }
+}
+```
+
+**Step 2:** Create the factory
+
+```ts
+abstract class FactoryGardener {
+    abstract createPerson(): Gardener
+
+    public gardener(): void {
+        var person = this.createPerson()
+        person.maintain()
+        person.watering()
+    }
+}
+```
+
+**Step 3:** Create the creator class of A & B persons
+
+```ts
+class CreatorAPerson extends FactoryGardener {
+    public createPerson(): Gardener {
+        return new APerson
+    }
+}
+
+class CreatorBPerson extends FactoryGardener {
+    public createPerson(): Gardener {
+        return new BPerson
+    }
+}
+```
+
+**Step 4:** Create the client class
+
+```ts
+class Client {
+
+    constructor(person: string) {
+
+        var gardener: FactoryGardener;
+
+        if (person == "A") {
+            gardener = new CreatorAPerson
+        } else if (person == "B") {
+            gardener = new CreatorBPerson
+        } else {
+            throw Error("Undefined")
         }
 
-        public watering(): void {
-            console.log("B person watering garden")
-        }
+        gardener.gardener()
+
     }
-  ```
+}
 
-  **Step 2:** Create the factory
+new Client("A")
+```
 
-  ```ts
-    abstract class FactoryGardener {
-        abstract createPerson(): Gardener
+#### Abstract Factory
 
-        public gardener(): void {
-            var person = this.createPerson()
-            person.maintain()
-            person.watering()
-        }
+![AbstractFactory](https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure-2x.png)
+
+The abstract factory is a common pattern that you implement in the project. This pattern can be called a factory of factories because the focus of this pattern is to produce families of related objects without specifying their concrete classes.
+
+An example, you have the Nissan factory and I have the Toyota factory. Both of us want to make a new car with similar types. The types of cars that we want to create involve Coupes & Crossovers.
+
+Let's making the code's example based on above case.
+
+**Step 1:** Create the abstract product, it means I create abstract class for Coupes & Crossovers. At this moment, it's okay if you want to use interface rather than abstract class.
+
+```ts
+abstract class Coupes {
+    abstract makeCoupes(): void
+}
+
+abstract class Crossovers {
+    abstract makeCrossovers(): void
+}
+```
+
+**Step 2:** Create the concrete product based on the abstract or interface that you create in the step 1. The class will define the method based on that.
+
+```ts
+class ToyotaCoupes extends Coupes {
+    public makeCoupes(): void {
+        console.log("Toyota make coupes")
     }
-  ```
+}
 
-  **Step 3:** Create the creator class of A & B persons
-
-  ```ts
-    class CreatorAPerson extends FactoryGardener {
-        public createPerson(): Gardener {
-            return new APerson
-        }
+class NissanCoupes extends Coupes {
+    public makeCoupes(): void {
+        console.log("Nissan make coupes")
     }
+}
 
-    class CreatorBPerson extends FactoryGardener {
-        public createPerson(): Gardener {
-            return new BPerson
-        }
+class ToyotaCrossovers extends Crossovers {
+    public makeCrossovers(): void {
+        console.log("Toyota make crossovers")
     }
-  ```
+}
 
-  **Step 4:** Create the client class
-
-  ```ts
-    class Client {
-
-        constructor(person: string) {
-
-            var gardener: FactoryGardener;
-
-            if (person == "A") {
-                gardener = new CreatorAPerson
-            } else if (person == "B") {
-                gardener = new CreatorBPerson
-            } else {
-                throw Error("Undefined")
-            }
-
-            gardener.gardener()
-
-        }
+class NissanCrossovers extends Crossovers {
+    public makeCrossovers(): void {
+        console.log("Nissan make crossovers")
     }
+}
+```
 
-    new Client("A")
-  ```
+**Step 3:** Create the abstract factory interface. This interface will implements by the Toyota & Nissan factories.
 
-* #### Abstract Factory
+```ts
+interface AbstractFactory {
+    coupes(): Coupes
+    crossovers(): Crossovers
+}
+```
 
-  ![AbstractFactory](https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure-2x.png)
+**Step 4:** Create the concrete factory. This class will implements the interface from `AbstractFactory` and depends to concrete products.
 
-  The abstract factory is a common pattern that you implement in the project. This pattern can be called a factory of factories because the focus of this pattern is to produce families of related objects without specifying their concrete classes.
-
-  An example, you have the Nissan factory and I have the Toyota factory. Both of us want to make a new car with similar types. The types of cars that we want to create involve Coupes & Crossovers.
-
-  Let's making the code's example based on above case.
-
-  **Step 1:** Create the abstract product, it means I create abstract class for Coupes & Crossovers. At this moment, it's okay if you want to use interface rather than abstract class.
-
-  ```ts
-    abstract class Coupes {
-        abstract makeCoupes(): void
+```ts
+class ToyotaFactory implements AbstractFactory {
+    public coupes(): Coupes {
+        return new ToyotaCoupes()
     }
 
-    abstract class Crossovers {
-        abstract makeCrossovers(): void
+    public crossovers(): Crossovers {
+        return new ToyotaCrossovers()
     }
-  ```
+}
 
-  **Step 2:** Create the concrete product based on the abstract or interface that you create in the step 1. The class will define the method based on that.
+class NissanFactory implements AbstractFactory {
+    public coupes(): Coupes {
+        return new NissanCoupes()  
+    }
 
-  ```ts
-    class ToyotaCoupes extends Coupes {
-        public makeCoupes(): void {
-            console.log("Toyota make coupes")
-        }
+    public crossovers(): Crossovers {
+        return new NissanCrossovers()
+    }
+}
+```
+
+**Step 5:** And the last step is create a client class that have a dependency inversion into the abstract factory interface.
+
+```ts
+class Client {
+    private factory: AbstractFactory
+
+    constructor(factory: AbstractFactory) { 
+        this.factory = factory
+    }
+
+    public makeCoupes(): Coupes {
+        return this.factory.coupes()
+    }
+
+    public makeCrossovers(): Crossovers {
+        return this.factory.crossovers()
+    }
+}
+
+var client = new Client(new NissanFactory)
+
+var coupes = client.makeCoupes()
+coupes.makeCoupes()
+
+var crossovers = client.makeCrossovers()
+crossovers.makeCrossovers()
+```
+
+#### Builder
+
+![Builder](https://refactoring.guru/images/patterns/diagrams/builder/structure.png)
+
+The builder is a pattern to split your complex object into a step-by-step approach. This pattern suggests extracting the construction to separate objects called builders. So the builder class will independent itself.
+
+An example, if you wanna make an object called a Car. You need to make a step-by-step to complete the car's construction. You need to make a chassis, engine cylinder, body, etc. And other times, you need to make the same object car but with car's variants.
+
+Let's making the code's example based on above case.
+
+**Step 1:** Create a `Car` class, this class is a complex object that we want to solved with the builder pattern.
+
+```ts
+class Car {
+    public chassis: string
+    public engineCylinder: number
+    public body: string
+    public variant: string
+
+    constructor() {
+        this.chassis = ""
+        this.engineCylinder = 0
+        this.body = ""
+        this.variant = ""
+    }
+}
+```
+
+**Step 2:** Create a `Builder` class & interface, this is the most important thing in the builder pattern. Because those class & interface will help a `Car` class to make an object step-by-step.
+
+```ts
+interface Builder {
+    reset(): any
+    buildChassis(): any
+    buildEngineCylinder(cylinder: number): any
+    buildBody(): any
+    buildSportVariant(): any
+}
+
+class CarBuilder implements Builder {
+    private car: Car
+
+    constructor() {
+        this.car = new Car()
     }
     
-    class NissanCoupes extends Coupes {
-        public makeCoupes(): void {
-            console.log("Nissan make coupes")
-        }
+    public reset(): any {
+        this.car = new Car()
+        return this
     }
 
-    class ToyotaCrossovers extends Crossovers {
-        public makeCrossovers(): void {
-            console.log("Toyota make crossovers")
-        }
+    public buildChassis(): any {
+        this.car.chassis = "Standard Chassis"
+        return this 
     }
 
-    class NissanCrossovers extends Crossovers {
-        public makeCrossovers(): void {
-            console.log("Nissan make crossovers")
-        }
-    }
-  ```
-
-  **Step 3:** Create the abstract factory interface. This interface will implements by the Toyota & Nissan factories.
-
-  ```ts
-    interface AbstractFactory {
-        coupes(): Coupes
-        crossovers(): Crossovers
-    }
-  ```
-
-  **Step 4:** Create the concrete factory. This class will implements the interface from `AbstractFactory` and depends to concrete products.
-
-  ```ts
-    class ToyotaFactory implements AbstractFactory {
-        public coupes(): Coupes {
-            return new ToyotaCoupes()
-        }
-
-        public crossovers(): Crossovers {
-            return new ToyotaCrossovers()
-        }
+    public buildEngineCylinder(engineCylinder: number) {
+        this.car.engineCylinder = engineCylinder
+        return this
     }
 
-    class NissanFactory implements AbstractFactory {
-        public coupes(): Coupes {
-            return new NissanCoupes()  
-        }
-
-        public crossovers(): Crossovers {
-            return new NissanCrossovers()
-        }
-    }
-  ```
-
-  **Step 5:** And the last step is create a client class that have a dependency inversion into the abstract factory interface.
-
-  ```ts
-    class Client {
-        private factory: AbstractFactory
-
-        constructor(factory: AbstractFactory) { 
-            this.factory = factory
-        }
-
-        public makeCoupes(): Coupes {
-            return this.factory.coupes()
-        }
-
-        public makeCrossovers(): Crossovers {
-            return this.factory.crossovers()
-        }
+    public buildBody() {
+        this.car.body = "Standard Body"
+        return this
     }
 
-    var client = new Client(new NissanFactory)
-
-    var coupes = client.makeCoupes()
-    coupes.makeCoupes()
-
-    var crossovers = client.makeCrossovers()
-    crossovers.makeCrossovers()
-  ```
-
-* #### Builder
-  
-  ![Builder](https://refactoring.guru/images/patterns/diagrams/builder/structure.png)
-  
-  The builder is a pattern to split your complex object into a step-by-step approach. This pattern suggests extracting the construction to separate objects called builders. So the builder class will independent itself.
-
-  An example, if you wanna make an object called a Car. You need to make a step-by-step to complete the car's construction. You need to make a chassis, engine cylinder, body, etc. And other times, you need to make the same object car but with car's variants.
-
-  Let's making the code's example based on above case.
-
-  **Step 1:** Create a `Car` class, this class is a complex object that we want to solved with the builder pattern.
-
-  ```ts
-    class Car {
-        public chassis: string
-        public engineCylinder: number
-        public body: string
-        public variant: string
-
-        constructor() {
-            this.chassis = ""
-            this.engineCylinder = 0
-            this.body = ""
-            this.variant = ""
-        }
-    }
-  ```
-
-  **Step 2:** Create a `Builder` class & interface, this is the most important thing in the builder pattern. Because those class & interface will help a `Car` class to make an object step-by-step.
-
-  ```ts
-    interface Builder {
-        reset(): any
-        buildChassis(): any
-        buildEngineCylinder(cylinder: number): any
-        buildBody(): any
-        buildSportVariant(): any
+    public buildSportVariant() {
+        this.car.variant = "Sport Variant"
+        return this
     }
 
-    class CarBuilder implements Builder {
-        private car: Car
-
-        constructor() {
-            this.car = new Car()
-        }
-        
-        public reset(): any {
-            this.car = new Car()
-            return this
-        }
-
-        public buildChassis(): any {
-            this.car.chassis = "Standard Chassis"
-            return this 
-        }
-
-        public buildEngineCylinder(engineCylinder: number) {
-            this.car.engineCylinder = engineCylinder
-            return this
-        }
-
-        public buildBody() {
-            this.car.body = "Standard Body"
-            return this
-        }
-
-        public buildSportVariant() {
-            this.car.variant = "Sport Variant"
-            return this
-        }
-
-        public getResult(): Car {
-            return this.car
-        }
+    public getResult(): Car {
+        return this.car
     }
-  ```
+}
+```
 
-  **Step 3:** Create a `Director` class, this class has a role as a runner of the builder.
+**Step 3:** Create a `Director` class, this class has a role as a runner of the builder.
 
-  ```ts
-    class Director {
-        private builder: Builder
+```ts
+class Director {
+    private builder: Builder
 
-        constructor(builder: Builder) {
-            this.builder = builder
-        }
-
-        public makeStandardCar() {
-            this.builder.reset().
-                buildChassis().
-                buildEngineCylinder(3).
-                buildBody()
-        }
-
-        public makeSportCar() {
-            this.builder.reset().
-                buildChassis().
-                buildEngineCylinder(6).
-                buildBody().
-                buildSportVariant()
-        }
-    }
-  ```
-
-  **Step 4:** Create a Client class, this client class will handle the dependency process and running the code.
-
-  ```ts
-     class Client {
-         constructor() {
-             var builder = new CarBuilder()
-             var director = new Director(builder)
-             director.makeSportCar()
-             var result = builder.getResult()
-             console.log(JSON.stringify(result))
-         }
-     }
-
-     new Client
-  ```
-
-* #### Prototype
-  
-  ![Prototype](https://refactoring.guru/images/patterns/diagrams/prototype/structure.png)
-  
-  The prototype is a pattern that helps you to copy the existing object without any dependence on the classes. Let's say you have an object and you want to copy the object, how do you do that? Maybe you will create another object and copy the attribute one by one. That is bad practice to copy the object. Prototype pattern will helps you to copy the object easily.
-
-  Let's making the code's example based on above case.
-
-  **Step 1:** Create the interface that includes the clone method, the clone method is mandatory for cloning the object. The clone method is the main thing of the prototype pattern.
-
-  ```ts
-    interface PrototypeStudent {
-        setName(name: string): void
-        setGrade(grade: number): void
-        getName(): string
-        getGrade(): number
-        clone(): PrototypeStudent
-    }
-  ```
-
-  **Step 2:** Implement the interface
-
-  ```ts
-    class Student implements PrototypeStudent {
-        private name: string
-        private grade: number
-
-        constructor(name: string, grade: number) {
-            this.name = name
-            this.grade = grade
-        }
-
-        public setName(name: string): void {
-            this.name = name
-        }
-
-        public setGrade(grade: number): void {
-            this.grade = grade
-        }
-
-        public getName(): string {
-            return this.name
-        }
-
-        public getGrade(): number {
-            return this.grade
-        }
-
-        public clone(): PrototypeStudent {
-            return new Student(this.name, this.grade)
-        }
-    }
-  ```
-
-  **Step 3:** This is the final step, the client copies the object without any pain to copy it.
-
-  ```ts
-    class Client {
-        constructor() {
-            var studentA = new Student("student A", 9)
-            var studentB = studentA.clone()
-
-            studentB.setName("student B")
-            studentB.setGrade(4)
-
-            console.log(JSON.stringify(studentA)) // Output: {"name":"student A","grade":9}
-            console.log(JSON.stringify(studentB)) // Output: {"name":"student B","grade":4}
-        }
+    constructor(builder: Builder) {
+        this.builder = builder
     }
 
-    new Client
-  ```
-
-* #### Singleton
-  
-  The singleton pattern is focused on making sure you only have one instance and sharing the instance for global access. This pattern is applicable to your program which should have a single instance.
-
-  Let's making the code's example based on above case.
-
-  ```ts
-    class Database {
-        private static instance: Database
-
-        private constructor() {}
-
-        public static getInstance(): Database {
-            if (!Database.instance) {
-                Database.instance = new Database()
-            }
-            return Database.instance
-        }
-
-        public doSomething() {
-            console.log("Doing something...")
-        }
+    public makeStandardCar() {
+        this.builder.reset().
+            buildChassis().
+            buildEngineCylinder(3).
+            buildBody()
     }
 
-    const databaseInstance = Database.getInstance()
-    databaseInstance.doSomething()
-  ```
+    public makeSportCar() {
+        this.builder.reset().
+            buildChassis().
+            buildEngineCylinder(6).
+            buildBody().
+            buildSportVariant()
+    }
+}
+```
+
+**Step 4:** Create a Client class, this client class will handle the dependency process and running the code.
+
+```ts
+class Client {
+    constructor() {
+        var builder = new CarBuilder()
+        var director = new Director(builder)
+        director.makeSportCar()
+        var result = builder.getResult()
+        console.log(JSON.stringify(result))
+    }
+}
+
+new Client
+```
+
+#### Prototype
+
+![Prototype](https://refactoring.guru/images/patterns/diagrams/prototype/structure.png)
+
+The prototype is a pattern that helps you to copy the existing object without any dependence on the classes. Let's say you have an object and you want to copy the object, how do you do that? Maybe you will create another object and copy the attribute one by one. That is bad practice to copy the object. Prototype pattern will helps you to copy the object easily.
+
+Let's making the code's example based on above case.
+
+**Step 1:** Create the interface that includes the clone method, the clone method is mandatory for cloning the object. The clone method is the main thing of the prototype pattern.
+
+```ts
+interface PrototypeStudent {
+    setName(name: string): void
+    setGrade(grade: number): void
+    getName(): string
+    getGrade(): number
+    clone(): PrototypeStudent
+}
+```
+
+**Step 2:** Implement the interface
+
+```ts
+class Student implements PrototypeStudent {
+    private name: string
+    private grade: number
+
+    constructor(name: string, grade: number) {
+        this.name = name
+        this.grade = grade
+    }
+
+    public setName(name: string): void {
+        this.name = name
+    }
+
+    public setGrade(grade: number): void {
+        this.grade = grade
+    }
+
+    public getName(): string {
+        return this.name
+    }
+
+    public getGrade(): number {
+        return this.grade
+    }
+
+    public clone(): PrototypeStudent {
+        return new Student(this.name, this.grade)
+    }
+}
+```
+
+**Step 3:** This is the final step, the client copies the object without any pain to copy it.
+
+```ts
+class Client {
+    constructor() {
+        var studentA = new Student("student A", 9)
+        var studentB = studentA.clone()
+
+        studentB.setName("student B")
+        studentB.setGrade(4)
+
+        console.log(JSON.stringify(studentA)) // Output: {"name":"student A","grade":9}
+        console.log(JSON.stringify(studentB)) // Output: {"name":"student B","grade":4}
+    }
+}
+
+new Client
+```
+
+#### Singleton
+
+The singleton pattern is focused on making sure you only have one instance and sharing the instance for global access. This pattern is applicable to your program which should have a single instance.
+
+Let's making the code's example based on above case.
+
+```ts
+class Database {
+    private static instance: Database
+
+    private constructor() {}
+
+    public static getInstance(): Database {
+        if (!Database.instance) {
+            Database.instance = new Database()
+        }
+        return Database.instance
+    }
+
+    public doSomething() {
+        console.log("Doing something...")
+    }
+}
+
+const databaseInstance = Database.getInstance()
+databaseInstance.doSomething()
+```
 
 ### Structural Patterns
 
 The structural patterns are focus on how classes and objects are composed to form larger structures and relationships. This concept will help you to make your code more flexible and efficient.
 
-* #### Adapter
-  
-  ![Adapter](https://refactoring.guru/images/patterns/diagrams/adapter/structure-object-adapter.png)
-  
-  The adapter pattern focuses on helping an object to communicate with incompatible interfaces to collaborate. In the real case example, when you travel from Indonesia to Europe you may get a surprise when trying to charge your phone. The power plug and sockets standards are different. So, you need a plug adaptor to charge your phone.
+#### Adapter
 
-* #### Bridge
-  
-  ![Bridge](https://refactoring.guru/images/patterns/diagrams/bridge/structure-en.png)
-  
-  The bridge pattern focuses on separating the large class into several hierarchies. The bridge's concept is a combination of the single responsibility and dependency inversion in SOLID principles. Basically, if you already learn `Creational Pattern` you will find any bridge implementation in the code's example.
+![Adapter](https://refactoring.guru/images/patterns/diagrams/adapter/structure-object-adapter.png)
 
-* #### Composite
-  
-  ![Composite](https://refactoring.guru/images/patterns/diagrams/composite/structure-en.png)
+The adapter pattern focuses on helping an object to communicate with incompatible interfaces to collaborate. In the real case example, when you travel from Indonesia to Europe you may get a surprise when trying to charge your phone. The power plug and sockets standards are different. So, you need a plug adaptor to charge your phone.
 
-  The composite pattern focuses on composing objects into tree structures and working with if they are individual objects. This pattern is applicable if your app structure is represented as a tree.
+#### Bridge
 
-  In the real-world example, a company has an organization starting from the boss to the employees. When the boss has an idea that needs to be done, he will give a command to the subordinate and the subordinate will continue the command to employees and the employees will work with it.
+![Bridge](https://refactoring.guru/images/patterns/diagrams/bridge/structure-en.png)
 
-* #### Decorator
+The bridge pattern focuses on separating the large class into several hierarchies. The bridge's concept is a combination of the single responsibility and dependency inversion in SOLID principles. Basically, if you already learn `Creational Pattern` you will find any bridge implementation in the code's example.
 
-* #### Facade
+#### Composite
 
-* #### Flyweight
+![Composite](https://refactoring.guru/images/patterns/diagrams/composite/structure-en.png)
 
-* #### Proxy
+The composite pattern focuses on composing objects into tree structures and working with if they are individual objects. This pattern is applicable if your app structure is represented as a tree.
+
+In the real-world example, a company has an organization starting from the boss to the employees. When the boss has an idea that needs to be done, he will give a command to the subordinate and the subordinate will continue the command to employees and the employees will work with it.
+
+#### Decorator
+
+#### Facade
+
+#### Flyweight
+
+#### Proxy
 
 ### Behavioral Pattern
 
-* #### Chain of Responsibility
+#### Chain of Responsibility
 
-* #### Command
+#### Command
 
-* #### Iterator
+#### Iterator
 
-* #### Mediator
+#### Mediator
 
-* #### Memento
+#### Memento
 
-* #### Observer
+#### Observer
 
-* #### State
+#### State
 
-* #### Strategy
+#### Strategy
 
-* #### Template Method
+#### Template Method
 
-* #### Visitor
+#### Visitor
 
 ## Reference
 
