@@ -504,6 +504,12 @@ In the real-world example, a company has an organization starting from the boss 
 
 #### Decorator
 
+![Decorator](https://refactoring.guru/images/patterns/diagrams/decorator/structure.png)
+
+The decorator pattern provides flexible extending functionality. In general, the concept of this pattern is similar to the builder pattern. If the builder is building the object step by step, in the decorator you create a behavior based on several behaviors. Weird right? I think so hahaha.
+
+An example, you already wear a T-shirt but you still getting cold. After that, you wear a sweater but you still getting cold. After that, you wear a coat and now you're warmer.
+
 #### Facade
 
 #### Flyweight
