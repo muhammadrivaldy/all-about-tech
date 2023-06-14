@@ -444,7 +444,9 @@ These patterns will be divided into:
     databaseInstance.doSomething()
   ```
 
-### Structural Pattern
+### Structural Patterns
+
+The structural patterns are focus on how classes and objects are composed to form larger structures and relationships. This concept will help you to make your code more flexible and efficient.
 
 * #### Adapter
   
