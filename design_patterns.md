@@ -459,6 +459,12 @@ These patterns will be divided into:
   The bridge pattern focuses on separating the large class into several hierarchies. The bridge's concept is a combination of the single responsibility and dependency inversion in SOLID principles. Basically, if you already learn `Creational Pattern` you will find any bridge implementation in the code's example.
 
 * #### Composite
+  
+  ![Composite](https://refactoring.guru/images/patterns/diagrams/composite/structure-en.png)
+
+  The composite pattern focuses on composing objects into tree structures and working with if they are individual objects. This pattern is applicable if your app structure is represented as a tree.
+
+  In the real-world example, a company has an organization starting from the boss to the employees. When the boss has an idea that needs to be done, he will give a command to the subordinate and the subordinate will continue the command to employees and the employees will work with it.
 
 * #### Decorator
 
