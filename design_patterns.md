@@ -512,6 +512,12 @@ An example, you already wear a T-shirt but you still getting cold. After that, y
 
 #### Facade
 
+![Facade](https://refactoring.guru/images/patterns/diagrams/facade/structure.png)
+
+The facade pattern is an interface that encapsulations and simplifies a complex subsystem. So the client doesn't need to know the complexity of the subsystem relations. By doing this, you can decrease the complex relationship between classes.
+
+An example, you want to ask something about the product of the company. That company gas many products there, so you will asking it to the customer service team. The customer service team will help you to answer your question and you don't need to know all of the products that they have.
+
 #### Flyweight
 
 #### Proxy
