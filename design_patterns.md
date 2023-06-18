@@ -520,6 +520,12 @@ An example, you want to ask something about the product of the company. That com
 
 #### Flyweight
 
+![Flyweight](https://refactoring.guru/images/patterns/diagrams/flyweight/structure.png)
+
+The flyweight pattern focuses to reduce memory usage by sharing data between objects instead of putting all attributes into one object. We separate the attributes based on 2 things, intrinsic (shared) state & extrinsic (unique) state.
+
+An example, you have a company and the company has several divisions. Every division needs to audit by the financial audit to make sure the cash flow is still healthy. If you hire a financial audit team for all divisions and it will be expensive for the company, the solution is to hire one financial audit team and audit the cash flow one by one.
+
 #### Proxy
 
 ### Behavioral Pattern
