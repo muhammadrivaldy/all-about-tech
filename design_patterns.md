@@ -528,6 +528,12 @@ An example, you have a company and the company has several divisions. Every divi
 
 #### Proxy
 
+![Proxy](https://refactoring.guru/images/patterns/diagrams/proxy/structure.png)
+
+The proxy pattern implementation is look like a facade pattern, a proxy will encapsulate another object and you can add something there without any changes in the object that we want to wrap.
+
+An example, if you want to go to an interview at the company and you need to go to the office. Then, when you arrived there you need to get permission first from the security before you can do an interview. The security looks like a proxy.
+
 ### Behavioral Pattern
 
 #### Chain of Responsibility
