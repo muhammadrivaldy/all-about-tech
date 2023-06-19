@@ -565,6 +565,18 @@ The main thing is, this pattern encapsulates a request as an object and passes i
 
 #### Iterator
 
+![Iterator](https://refactoring.guru/images/patterns/diagrams/iterator/structure.png)
+
+The iterator is a pattern that provides a way to access the elements sequentially without exposing their underlying representation. It will iterate over elements without knowing how the elements were implemented.
+
+An example, if you wanna go someplace that you didn't come to that place before and you don't have any idea how to go there. The iterator will help you in several ways:
+
+- Check the place one by one randomly
+- Use virtual maps
+- Ask the local guide
+
+You can call all as an iterator.
+
 #### Mediator
 
 #### Memento
