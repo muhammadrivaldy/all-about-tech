@@ -557,6 +557,12 @@ Based on that, when you did a report, it will be step by step before you can rea
 
 #### Command
 
+![Command](https://refactoring.guru/images/patterns/diagrams/command/structure.png)
+
+The command pattern has approach to delay or queue your execution by pass requests as a method arguments. Do you understand? I think no, because me too haha. Honestly, it's a little bit hard to understand it in the first time, but after I take a look the code and repeat the explanation often, I got the context and more clear now.
+
+The main thing is, this pattern encapsulates a request as an object and passes it as an object. And this pattern supports you to revert the execution too. Let's take an example for a clearer explanation.
+
 #### Iterator
 
 #### Mediator
@@ -582,3 +588,4 @@ Design Patterns | <https://refactoring.guru/design-patterns>
 Design Pattern - Overview | <https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm>
 Design Patterns | <https://sourcemaking.com/design_patterns>
 Design Pattern untuk Pembuatan Perangkat Lunak | <https://www.dicoding.com/blog/design-pattern>
+Command Pattern | <https://www.geeksforgeeks.org/command-pattern>
