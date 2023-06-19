@@ -50,7 +50,7 @@ Design patterns will help you and your team to develop good code and you can kno
 
 The creational patterns are focused on how to create objects and the client doesn't need to know how the logic has been made. This approach will be decoupling the object from the code and make your code more maintainable and extensible.
 
-These patterns will be divided into:
+This catalog will be divided into:
 
 #### Factory Method
 
@@ -452,6 +452,8 @@ new Client
 
 #### Singleton
 
+![Singleton](https://refactoring.guru/images/patterns/diagrams/singleton/structure-en.png)
+
 The singleton pattern is focused on making sure you only have one instance and sharing the instance for global access. This pattern is applicable to your program which should have a single instance.
 
 Let's making the code's example based on above case.
@@ -481,6 +483,8 @@ databaseInstance.doSomething()
 ### Structural Patterns
 
 The structural patterns are focus on how classes and objects are composed to form larger structures and relationships. This concept will help you to make your code more flexible and efficient.
+
+This catalog will be divided into:
 
 #### Adapter
 
