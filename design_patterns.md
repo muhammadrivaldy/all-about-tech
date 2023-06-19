@@ -542,6 +542,19 @@ An example, if you want to go to an interview at the company and you need to go 
 
 #### Chain of Responsibility
 
+![Chain of responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png)
+
+The chain of responsibility pattern is a method to pass a request along a chain of handlers until one of them handles it. Oftentimes, this pattern is used in the middleware process for checking something before the request passes to the last handler like authentication or validation and etc.
+
+An example, if you have a problem with an internet provider and you want to report it to them. The step by step of report will be like this:
+
+- Call the call center
+- Answered by the bot for frequent questions/problems
+- Answered by the call center team
+- Answered by the engineer (the last handler)
+
+Based on that, when you did a report, it will be step by step before you can reach the engineer of them. Let's say the call center can handle your problem, so the engineer doesn't need to answer your question.
+
 #### Command
 
 #### Iterator
