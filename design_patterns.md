@@ -619,6 +619,12 @@ The analogy of this pattern is similar to the iterator pattern as well. An examp
 
 #### Template Method
 
+![Template Method](https://refactoring.guru/images/patterns/diagrams/template-method/structure.png)
+
+The template method is a pattern that defines skeleton of algorithm in the parent class but the subclasses can modify it by itself without changing any algorithm structure.
+
+An example, we have a parent class called Car and the car will be extended by the EV Car & Sports Car. The difference between them is only energy sources. So, EV Cars & Sports Cars will handle the energy sources by themselves.
+
 #### Visitor
 
 ## Reference
