@@ -611,6 +611,12 @@ An example, you have a tumbler that includes an oil there. After that you want t
 
 #### Strategy
 
+![Strategy](https://refactoring.guru/images/patterns/diagrams/strategy/structure.png)
+
+The strategy pattern is really similar to the state pattern. The difference is only about the purpose itself. The strategy pattern lets you define a family of algorithms and put it in separate classes and the classes will interchangeable.
+
+The analogy of this pattern is similar to the iterator pattern as well. An example, you can go to the airport with several transportation either using a bicycle, bus, or car. All that transportation will be driving you to the airport.
+
 #### Template Method
 
 #### Visitor
