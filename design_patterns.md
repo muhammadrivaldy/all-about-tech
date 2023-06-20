@@ -23,7 +23,7 @@
       - [Facade](#facade)
       - [Flyweight](#flyweight)
       - [Proxy](#proxy)
-    - [Behavioral Pattern](#behavioral-pattern)
+    - [Behavioral Patterns](#behavioral-patterns)
       - [Chain of Responsibility](#chain-of-responsibility)
       - [Command](#command)
       - [Iterator](#iterator)
@@ -538,7 +538,7 @@ The proxy pattern implementation is look like a facade pattern, a proxy will enc
 
 An example, if you want to go to an interview at the company and you need to go to the office. Then, when you arrived there you need to get permission first from the security before you can do an interview. The security looks like a proxy.
 
-### Behavioral Pattern
+### Behavioral Patterns
 
 The behavioral patterns are focused on how the objects and classes are communication efficient & flexible. These patterns have concerns with algorithms and the assignment of responsibilities between objects.
 
