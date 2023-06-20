@@ -603,6 +603,12 @@ An example, you want to buy a new phone from the store. But, the release date is
 
 #### State
 
+![State](https://refactoring.guru/images/patterns/diagrams/state/structure-en.png?id=38c5cc3a610a201e5bc26a441c63d327)
+
+The state pattern is a method that allowed the object to replace its behavior when its internal state changes. Every state that you want to create should be following the interface. So, every state will have the same orientation even though has different logic in there.
+
+An example, you have a tumbler that includes an oil there. After that you want to replace the state (oli) with water, you can put all of the water that you have into tumbler. So, the oil will be gone from the tumbler.
+
 #### Strategy
 
 #### Template Method
