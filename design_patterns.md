@@ -591,9 +591,15 @@ An example, we have 2 trains and both of them want to come to a station. Both of
 
 The memento is a pattern that focuses on saving and restoring states. With memento, you can save the checkpoint and restore it later. This pattern captures the checkpoint and restore the checkpoint without violating encapsulation.
 
-I think, I don't need to explain the real case. It's clear and we can jump out to the example code.
+I think, I don't need to explain the real case. It's clear and we can jump out to the code's example.
 
 #### Observer
+
+![Observer](https://refactoring.guru/images/patterns/diagrams/observer/structure.png)
+
+The observer also known as event-subscriber or listener is a pattern that helps you to define a subscription mechanism to notify multiple objects if any events that happen in the publisher.
+
+An example, you want to buy a new phone from the store. But, the release date is unpredictable. Then, the store suggests to you to subscribe their email notification. Therefore, you will get a notification if the release date is fixed.
 
 #### State
 
