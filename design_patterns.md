@@ -587,6 +587,12 @@ An example, we have 2 trains and both of them want to come to a station. Both of
 
 #### Memento
 
+![Memento](https://refactoring.guru/images/patterns/diagrams/memento/structure1.png)
+
+The memento is a pattern that focuses on saving and restoring states. With memento, you can save the checkpoint and restore it later. This pattern captures the checkpoint and restore the checkpoint without violating encapsulation.
+
+I think, I don't need to explain the real case. It's clear and we can jump out to the example code.
+
 #### Observer
 
 #### State
