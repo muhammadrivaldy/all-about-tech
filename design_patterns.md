@@ -579,6 +579,12 @@ You can call all as an iterator.
 
 #### Mediator
 
+![Mediator](https://refactoring.guru/images/patterns/diagrams/mediator/structure.png)
+
+The mediator is a pattern that provides reduce dependencies between objects. In this pattern, if an object wants to communicate with other objects, it should through from mediator first instead direct communicating.
+
+An example, we have 2 trains and both of them want to come to a station. Both of them is impossible to communicate with each other, they need to communicate their arrival with the station. So, the station can handle the track and info to them about which track they can use to come to the station.
+
 #### Memento
 
 #### Observer
