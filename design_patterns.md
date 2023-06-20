@@ -627,6 +627,12 @@ An example, we have a parent class called Car and the car will be extended by th
 
 #### Visitor
 
+![Visitor](https://refactoring.guru/images/patterns/diagrams/visitor/structure-en.png)
+
+The visitor is a pattern that focuses on separating algorithms from the objects they are running itself. It makes it easy to add other operations or algorithms to the objects.
+
+Honestly, it makes me a little bit confused to explain it in a real-world analogy. But, let me create a code example for that.
+
 ## Reference
 
 Title | URL
