@@ -42,7 +42,7 @@ Design patterns is a solution to solving a common problem in software design. It
 
 ## Why we need to know?
 
-Design patterns will help you and your team to develop good code and you can know the code from your teammates easily. This approach will help you to create a code that is maintainable, reusable, & readable. Learning these patterns helps unexperienced developers to learn software design in easy way and faster way.
+Design patterns will help you and your team to develop good code and you can know the code from your teammates easily. This approach will help you to create a code that is maintainable, reusable, readable, & extendable. Learning these patterns helps unexperienced developers to learn software design in easy way and faster way.
 
 ## Various of Design Patterns
 
