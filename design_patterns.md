@@ -496,7 +496,7 @@ The adapter pattern focuses on helping an object to communicate with incompatibl
 
 ![Bridge](https://refactoring.guru/images/patterns/diagrams/bridge/structure-en.png)
 
-The bridge pattern focuses on separating the large class into several hierarchies. The bridge's concept is a combination of the single responsibility and dependency inversion in SOLID principles. Basically, if you already learn `Creational Pattern` you will find any bridge implementation in the code's example.
+The bridge pattern focuses on separating the large class into several hierarchies. The bridge's concept is a combination of the single responsibility and dependency inversion in SOLID principles. Basically, if you already learn Creational Pattern you will find any bridge implementation in the code's example.
 
 #### Composite
 
@@ -539,6 +539,8 @@ The proxy pattern implementation is look like a facade pattern, a proxy will enc
 An example, if you want to go to an interview at the company and you need to go to the office. Then, when you arrived there you need to get permission first from the security before you can do an interview. The security looks like a proxy.
 
 ### Behavioral Pattern
+
+The behavioral patterns are focused on how the objects and classes are communication efficient & flexible. These patterns have concerns with algorithms and the assignment of responsibilities between objects.
 
 #### Chain of Responsibility
 
