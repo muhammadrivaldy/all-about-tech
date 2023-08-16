@@ -2,10 +2,10 @@
 
 ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
-## Article Framework
+## Table of contents
 
 - [Design Patterns](#design-patterns)
-  - [Article Framework](#article-framework)
+  - [Table of contents](#table-of-contents)
   - [Overview](#overview)
   - [Why you need to know?](#why-you-need-to-know)
   - [Various of Design Patterns](#various-of-design-patterns)
