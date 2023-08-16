@@ -18,23 +18,17 @@ Kubernetes, called K8s is a platform open source for automation deployment, scal
 
 In 2014 Google teams state the project Kubernetes will be set as Open source.
 
----
-
 ### [Design Patterns](./design_patterns.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
 #### Overview Design Patterns
 
 Design patterns is a solution to solving a common problem in software design. It's not only to solve one case, design patterns are coverage many cases in software design. You can use it as a blueprint, so it will be helping you to develop your code with a pattern. Design patterns are concepts, you cannot copy them into your program without an adjustment.
 
----
-
 ### [Class Diagram](./class_diagram.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.1.0/cyan)
 
 #### Overview Class Diagram
 
 With Class Diagram we able to imagine the system as a blueprint. The blueprint will maps out attributes, methods, & relationships between classes. So, you can analyse concept of model that you want before you start coding.
-
----
 
 ### [SOLID Definition](./solid_defination.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
@@ -48,15 +42,11 @@ SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://
 - Interface Segregation Principle
 - Dependency Inversion Principle
 
----
-
 ### [Code Smells](./code_smells.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
 #### Overview Code Smells
 
 In general, code smells is not an issue. Even your code is have code smells, your code still working well. If we talk about "the definition of code smells", it will be refer to the fact that your code is not maintainable and not clean enough.
-
----
 
 ### API Versioning Best Practices ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
@@ -68,97 +58,65 @@ In general, code smells is not an issue. Even your code is have code smells, you
 
 #### Overview Hexagonal Architecture
 
----
-
 ### DDD & TDD in Programming ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview DDD & TDD in Programming
-
----
 
 ### Time Complexity ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Time Complexity
 
----
-
 ### Space Complexity ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Space Complexity
-
----
 
 ### Clean Code ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Clean Code
 
----
-
 ### Software Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Software Design
-
----
 
 ### C4 Model ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview C4 Model
 
----
-
 ### Clean Architecture ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Clean Architecture
-
----
 
 ### Database Types ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Database Types
 
----
-
 ### Vertical & Horizontal Scaling ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Vertical & Horizontal Scaling
-
----
 
 ### GraphQL with Golang ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview GraphQL
 
----
-
 ### gRPC with Golang ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview gRPC
-
----
 
 ### System Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview System Design
 
----
-
 ### Diagram as Code ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Diagram as Code
-
----
 
 ### Algorithm ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Algorithm
 
----
-
 ### [Data Structures](./data_structures.md) ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Data Structures
-
----
 
 ### [TCP vs UDP](./data_structures.md) ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
