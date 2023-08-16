@@ -48,6 +48,8 @@ SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://
 - Interface Segregation Principle
 - Dependency Inversion Principle
 
+---
+
 ### [Code Smells](./code_smells.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
 #### Overview Code Smells
@@ -56,15 +58,17 @@ In general, code smells is not an issue. Even your code is have code smells, you
 
 ---
 
-## 🍃️ What I want to share or learn
-
 ### API Versioning Best Practices ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### API Versioning Best Practices
 
+## 🍃️ What I want to share or learn
+
 ### Hexagonal Architecture ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Hexagonal Architecture
+
+---
 
 ### DDD & TDD in Programming ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
