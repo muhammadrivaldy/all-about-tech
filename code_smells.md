@@ -78,3 +78,4 @@ Code Smells | <https://refactoring.guru/refactoring/smells>
 Code Smells by Martin Fowler | <https://martinfowler.com/bliki/CodeSmell.html>
 Code Smells: What Are They And How Can I Prevent Them? | <https://linearb.io/blog/what-is-a-code-smell#what-is-a-code-smell>
 Fixing and Avoiding the Message Chain Code Smell | <https://linearb.io/blog/message-chains-code-smell>
+Primitive Obsession — A Code Smell that Hurts People the Most | <https://medium.com/the-sixt-india-blog/primitive-obsession-code-smell-that-hurt-people-the-most-5cbdd70496e9>
