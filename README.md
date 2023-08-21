@@ -78,6 +78,14 @@ In general, code smells is not an issue. Even your code is have code smells, you
 
 #### Overview Software Design
 
+### Software Architecture ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
+
+#### Overview Software Architecture
+
+### System Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
+
+#### Overview System Design
+
 ### C4 Model ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview C4 Model
@@ -101,10 +109,6 @@ In general, code smells is not an issue. Even your code is have code smells, you
 ### gRPC with Golang ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview gRPC
-
-### System Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
-
-#### Overview System Design
 
 ### Diagram as Code ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
