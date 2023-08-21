@@ -42,7 +42,7 @@ SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://
 - Interface Segregation Principle
 - Dependency Inversion Principle
 
-### [Code Smells](./code_smells.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
+### [Code Smells](./code_smells.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.1.0/cyan)
 
 #### Overview Code Smells
 
