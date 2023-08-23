@@ -54,7 +54,7 @@ In general, code smells is not an issue. Even your code is have code smells, you
 
 The software architecture is a whole system that you present with a diagram and focus on how components will interact each other. It will help you & your team to research, analyze & define the services that you need before executing the project.
 
-### System Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
+### [System Design](./system_design.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
 #### Overview System Design
 

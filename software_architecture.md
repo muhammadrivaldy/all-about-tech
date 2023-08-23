@@ -18,3 +18,4 @@ The software architecture is a whole system that you present with a diagram and 
 Title | URL
 ---|---
 The Software Architecture Handbook | <https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns>
+Software design vs. software architecture | <https://www.lucidchart.com/blog/software-architecture-vs-design>
