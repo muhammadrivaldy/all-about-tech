@@ -11,7 +11,7 @@
 
 ## What is software architecture?
 
-The software architecture is a whole system that you represent with a diagram and focus on how components will interact each other. It will help you & your team to research, analyze & define the services that you need before executing the project.
+The software architecture is a whole system that you present with a diagram and focus on how components will interact each other. It will help you & your team to research, analyze & define the services that you need before executing the project.
 
 ## Reference
 
