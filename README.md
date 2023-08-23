@@ -48,15 +48,13 @@ SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://
 
 In general, code smells is not an issue. Even your code is have code smells, your code still working well. If we talk about "the definition of code smells", it will be refer to the fact that your code is not maintainable and not clean enough.
 
-### [Software Architecture](./software_architecture.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
+### [Software Architecture vs System Design](./software_architecture_vs_system_design.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
-#### Overview Software Architecture
+#### Overview Software Architecture vs System Design
 
-The software architecture is a whole system that you present with a diagram and focus on how components will interact each other. It will help you & your team to research, analyze & define the services that you need before executing the project.
+I have been working as a Backend Engineer almost for 5 years. At that time I always focused on how I code as fast as I could and just learning based on what I worked on. After that, I tried to take a look at the overseas opportunities and I realized that my skills were not capable of reaching the requirement. I too focus on how to code fast without knowledge of "How the components interact with each other" clearly.
 
-### System Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
-
-#### Overview System Design
+In this article, I wanna share what I learned and hopefully, it can help you to understand clearer about the software architecture and system design. Because both of them sometimes overlap and we made a mistaken understanding.
 
 ### API Versioning Best Practices ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
