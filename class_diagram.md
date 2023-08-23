@@ -7,7 +7,7 @@
 Before we learn about **Class Diagram**, we need to know the **UML Diagram** strcuture first. Because, **UML Diagram** has derivatives.
 In this case, **UML Diagram** has 2 types (Structural & Behavioral) diagram.
 
-![UML Diagram Type](https://th.bing.com/th/id/R.94fb2968ddcfe2f1d4498df482c1ac31?rik=5vCXfmWcERdInw&riu=http%3a%2f%2fstatic3.creately.com%2fblog%2fwp-content%2fuploads%2f2012%2f02%2fUML-Diagram-types1.png%3fcrop&ehk=KvINUe7%2fw0pw8AcMyHfankgPnRNJE8C0yEfwqJByO3Q%3d&risl=&pid=ImgRaw&r=0)
+![UML Diagram Type](https://d3n817fwly711g.cloudfront.net/uploads/2012/02/UML-Diagram-types-1-1024x658.png)
 
 We won't learn about **UML Diagram** in here. We will focus on **Class Diagram**. With **Class Diagram** we able to imagine the system as a blueprint.
 The blueprint will maps out attributes, methods, & relationships between classes. So, you can analyse **concept of model** that you want before you start coding.
