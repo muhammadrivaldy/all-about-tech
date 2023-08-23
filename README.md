@@ -42,11 +42,21 @@ SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://
 - Interface Segregation Principle
 - Dependency Inversion Principle
 
-### [Code Smells](./code_smells.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.1.0/cyan)
+### [Code Smells](./code_smells.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
 #### Overview Code Smells
 
 In general, code smells is not an issue. Even your code is have code smells, your code still working well. If we talk about "the definition of code smells", it will be refer to the fact that your code is not maintainable and not clean enough.
+
+### [Software Architecture](./software_architecture.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
+
+#### Overview Software Architecture
+
+The software architecture is a whole system that you present with a diagram and focus on how components will interact each other. It will help you & your team to research, analyze & define the services that you need before executing the project.
+
+### System Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
+
+#### Overview System Design
 
 ### API Versioning Best Practices ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
@@ -77,14 +87,6 @@ In general, code smells is not an issue. Even your code is have code smells, you
 ### Software Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview Software Design
-
-### Software Architecture ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
-
-#### Overview Software Architecture
-
-### System Design ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
-
-#### Overview System Design
 
 ### C4 Model ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
