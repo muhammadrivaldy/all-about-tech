@@ -48,13 +48,13 @@ SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://
 
 In general, code smells is not an issue. Even your code is have code smells, your code still working well. If we talk about "the definition of code smells", it will be refer to the fact that your code is not maintainable and not clean enough.
 
-### [Software Architecture vs System Design](./software_architecture_vs_system_design.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
+### [Software Architecture](./software_architecture_vs_system_design.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
 
-#### Overview Software Architecture vs System Design
+#### Overview Software Architecture
 
 I have been working as a Backend Engineer almost for 5 years. At that time I always focused on how I code as fast as I could and just learning based on what I worked on. After that, I tried to take a look at the overseas opportunities and I realized that my skills were not capable of reaching the requirement. I too focus on how to code fast without knowledge of "How the components interact with each other" clearly.
 
-In this article, I wanna share what I learned and hopefully, it can help you to understand clearer about the software architecture and system design. Because both of them sometimes overlap and we made a mistaken understanding.
+In this article, I wanna share what I learned and hopefully, it can help me and you to understand clearer about a meaning of software architecture.
 
 ### API Versioning Best Practices ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
