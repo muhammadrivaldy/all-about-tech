@@ -18,7 +18,7 @@ In this article, I wanna share what I learned and hopefully, it can help me and 
 
 ## What is software architecture?
 
-The software architecture is a system that you present with a diagram and focus on how components will interact each other. It will help you & your team to research, analyze & define the services that you need before executing the project.
+Most people say software architecture is like a blueprint of system. In general, the software architecture is a system that you & your team present with a diagram and focus on how components will interact each other. It will help you & your team to research, analyze & define the services that you need before executing the project.
 
 ## Reference
 
@@ -26,3 +26,4 @@ Title | URL
 ---|---
 The Software Architecture Handbook | <https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns>
 Software design vs. software architecture | <https://www.lucidchart.com/blog/software-architecture-vs-design>
+Evolution in Software Architecture | <https://priyalwalpita.medium.com/evolution-in-software-architecture-a607db649586>
