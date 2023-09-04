@@ -125,3 +125,7 @@ In this article, I wanna share what I learned and hopefully, it can help me and 
 ### [TCP vs UDP](./data_structures.md) ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview TCP vs UDP
+
+### [DBMS vs RDBMS](./dbms_vs_rdbms.md) ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
+
+#### Overview DBMS vs RDBMS
