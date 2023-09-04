@@ -56,10 +56,6 @@ I have been working as a Backend Engineer almost for 5 years. At that time I alw
 
 In this article, I wanna share what I learned and hopefully, it can help me and you to understand clearer about a meaning of software architecture.
 
-### API Versioning Best Practices ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
-
-#### API Versioning Best Practices
-
 ## 🍃️ What I want to share or learn
 
 ### Hexagonal Architecture ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
@@ -129,3 +125,7 @@ In this article, I wanna share what I learned and hopefully, it can help me and 
 ### [DBMS vs RDBMS](./dbms_vs_rdbms.md) ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
 
 #### Overview DBMS vs RDBMS
+
+### API Versioning Best Practices ![Status](https://badgen.net/badge/status/waiting/gray) ![Versions](https://badgen.net/badge/version/v0.0.0/gray)
+
+#### Overview API Versioning Best Practices
