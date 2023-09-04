@@ -8,6 +8,7 @@
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
   - [What is software architecture?](#what-is-software-architecture)
+  - [Tools](#tools)
   - [Reference](#reference)
 
 ## Overview
@@ -19,6 +20,16 @@ In this article, I wanna share what I learned and hopefully, it can help me and 
 ## What is software architecture?
 
 Most people say software architecture is like a blueprint of system. In general, the software architecture is a system that you & your team present with a diagram and focus on how components will interact each other. It will help you & your team to research, analyze & define the services that you need before executing the project.
+
+## Tools
+
+Here are the tools that I use for making an architecture diagram. Btw, all these tools are open source, so you don't need to worry about pricing.
+
+- Diagrams mingrammer (<https://diagrams.mingrammer.com>): You can draw the cloud system architecture with Python. It makes you & your team easy to maintain and share the diagram in code. The advantage of this diagram is you need to learn the syntax before.
+
+- Draw.io (<https://www.drawio.com>): This is the first diagram tool I used. It's easy to work with because you don't need to put more focus on learning it first. This tool has a desktop app as well for mac, linux, & windows. So you can work with it online & offline.
+
+- Excalidraw (<https://excalidraw.com>): I just knew it a few months ago. Honestly, I don't have any experience with it. I like this diagram because the result is like use handwriting LOL.
 
 ## Reference
 
