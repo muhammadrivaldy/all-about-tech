@@ -48,7 +48,7 @@ SOLID design principles were promoted by [Robert C. Martin (Uncle Bob)](https://
 
 In general, code smells is not an issue. Even your code is have code smells, your code still working well. If we talk about "the definition of code smells", it will be refer to the fact that your code is not maintainable and not clean enough.
 
-### [Software Architecture](./software_architecture.md) ![Status](https://badgen.net/badge/status/in%20progress/orange) ![Versions](https://badgen.net/badge/version/v0.0.1/cyan)
+### [Software Architecture](./software_architecture.md) ![Status](https://badgen.net/badge/status/completed/green) ![Versions](https://badgen.net/badge/version/v1.0.0/cyan)
 
 #### Overview Software Architecture
 
