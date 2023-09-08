@@ -50,3 +50,4 @@ The Software Architecture Handbook | <https://www.freecodecamp.org/news/an-intro
 Software design vs. software architecture | <https://www.lucidchart.com/blog/software-architecture-vs-design>
 Evolution in Software Architecture | <https://priyalwalpita.medium.com/evolution-in-software-architecture-a607db649586>
 Top 8 diagramming tools for software architecture | <https://medium.com/@icepanel/top-8-diagramming-tools-for-software-architecture-2fc61d095b93>
+Software Architecture Patterns: What Are the Types and Which Is the Best One for Your Project | <https://www.turing.com/blog/software-architecture-patterns-types>
