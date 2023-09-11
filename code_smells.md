@@ -44,10 +44,10 @@ Object-orientation abusers are individuals who do not follow the OOP (Object-Ori
 
 ### Change preventers
 
-Change preventers are mean that if you want to change a function in one place, you need to put more effort to change the other files too. The change preventers are cover:
+Change preventers mean that if you want to change a function in one place, you need to put more effort into changing the other files too. The change preventers cover:
 
-- **Divergent change**: Too many changes in a class that maybe not really related to the class
-- **Shotgun surgery**: Making a bit change but give a big impact (to other codes)
+- **Divergent change**: Too many changes in a class that may not really related to the class
+- **Shotgun surgery**: Making a bit of change but giving a big impact (to other codes)
 - **Parallel inheritance hierarchies**: An inheritance must depend on another inheritance
 
 ### Dispensables
@@ -58,8 +58,8 @@ Dispensables are mean the code have unnecessary code and do not have relation wi
 - **Duplicate code**: Two or more code seems identical
 - **Lazy class**: Takes more effort to understand & maintain classes
 - **Data class**: A class doesn't have method enough to operate itself
-- **Dead code**: A variable, parameter, field, method or class is no longer used
-- **Speculative generality**: There are unused class, method, field or parameter
+- **Dead code**: A variable, parameter, field, method, or class is no longer used
+- **Speculative generality**: There are unused classes, methods, fields, or parameter
 
 ### Couplers
 
@@ -67,8 +67,8 @@ Couplers are mean the code have too much coupling between classes. The couplers 
 
 - **Feature envy**: A method accesses another object more than its own data
 - **Inappropriate intimacy**: A class uses internal fields and methods of another class
-- **Message chains**: When a client requests an object, that object request to another one, and so on
-- **Middle man**: A class perform only one action and delegating work to another class
+- **Message chains**: When a client requests an object, that object requests to another one, and so on
+- **Middle man**: A class performs only one action and delegates work to another class
 
 ## Reference
 
