@@ -25,26 +25,26 @@ There are several code smells that you should know. Let's define code smells mor
 
 ### Bloaters
 
-Bloaters are when code, method, and classes get bigger. They make your code hard to understand by others. The bloaters are covers:
+Bloaters occur when code, methods, and classes become larger, making your code harder for others to understand. The bloaters cover:
 
 - **Long method**: Too many lines of code in there
-- **Large class**: Too many fields, method, or lines of code
-- **Primitive obsession**: Use primitive attribute rather than complex object for specific variable (phone number, currency, and etc)
+- **Large class**: Too many fields, methods, or lines of code
+- **Primitive obsession**: Use primitive attributes rather than complex objects for specific variables (phone number, currency, etc.)
 - **Long parameter**: More than three parameters for methods
 - **Data clumps**: Different parts of the code using identical variables often
 
 ### Object-orientation abusers
 
-Object-orientation abusers are when the coder are not following the OOP principles. The object-orientation abusers are covers:
+Object-orientation abusers are individuals who do not follow the OOP (Object-Oriented Programming) principles. The object-orientation abusers cover:
 
 - **Switch statements**: You have a complex `switch` or `if` statements
 - **Temporary field**: Define a variable in the class scope but only used by one method
-- **Refused bequest**: Subclass uses only some methods and properties, or modify the behavior of its parent
+- **Refused bequest**: Subclass uses only some methods and properties or modifies the behavior of its parent
 - **Alternative classes with different interfaces**: Two classes are identical but have different method names
 
 ### Change preventers
 
-Change preventers are mean that if you want to change a function in one place, you need to put more effort to change the other files too. The change preventers are covers:
+Change preventers are mean that if you want to change a function in one place, you need to put more effort to change the other files too. The change preventers are cover:
 
 - **Divergent change**: Too many changes in a class that maybe not really related to the class
 - **Shotgun surgery**: Making a bit change but give a big impact (to other codes)
