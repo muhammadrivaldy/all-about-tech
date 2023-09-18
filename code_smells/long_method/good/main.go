@@ -10,7 +10,9 @@ import (
 )
 
 func main() {
-	responseUser, err := newRepo().getUser(1)
+	services := newServices(newRepo())
+
+	responseUser, err := services.getUser(1)
 	if err != nil {
 		panic(err)
 	}
@@ -31,7 +33,7 @@ func newRepo() *repositories {
 	}
 }
 
-func (repo *repositories) getUser(userID int) (responseUser, error) {
+func (repo *repositories) getUser(userID int) (user, error) {
 	var user user
 
 	if err := repo.clientDB.QueryRow(selectUserByID, userID).Scan(
@@ -44,14 +46,33 @@ func (repo *repositories) getUser(userID int) (responseUser, error) {
 		&user.CreatedAt,
 		&user.UpdatedAt,
 	); err != nil {
+		return user, err
+	}
+
+	return user, nil
+}
+
+type services struct {
+	repo *repositories
+}
+
+func newServices(repo *repositories) *services {
+	return &services{
+		repo: repo,
+	}
+}
+
+func (s *services) getUser(userID int) (responseUser, error) {
+	response, err := s.repo.getUser(userID)
+	if err != nil {
 		return responseUser{}, err
 	}
 
-	if !user.Status.isActive() {
+	if !response.Status.isActive() {
 		return responseUser{}, errors.New("user not active")
 	}
 
-	return user.userToResponseUser(), nil
+	return response.userToResponseUser(), nil
 }
 
 type status int
