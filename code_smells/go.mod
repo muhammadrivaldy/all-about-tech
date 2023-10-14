@@ -1,6 +1,6 @@
 module code_smells
 
-go 1.21.0
+go 1.19
 
 require github.com/muhammadrivaldy/go-util v0.3.31
 
