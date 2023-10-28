@@ -15,9 +15,9 @@ func BuildCar(request Car) {
 	/* {This is the code of validating} */
 
 	if request.Type == "wagon" {
-		BuildMachine("wagon")
+		BuildMachine("wagon family")
 	} else if request.Type == "crossover" {
-		BuildMachine("crossover")
+		BuildMachine("crossover family")
 	}
 
 	panic("the type is not eligible yet")
