@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Car struct {
 	Type     string
 	Engine   string
@@ -13,15 +15,15 @@ func BuildCar(request Car) {
 	/* {This is the code of validating} */
 
 	if request.Type == "wagon" {
-		BuildMachine()
+		BuildMachine("wagon")
 	} else if request.Type == "crossover" {
-		BuildMachine()
+		BuildMachine("crossover")
 	}
 
 	panic("the type is not eligible yet")
 
 }
 
-func BuildMachine() {
-	/* {This is the code of creating machine of crossover} */
+func BuildMachine(typeCar string) {
+	fmt.Printf("We build a machine for %s\n", typeCar)
 }
