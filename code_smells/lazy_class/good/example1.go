@@ -1,22 +1,22 @@
 package main
 
-type Contact struct {
+type Example1_Contact struct {
 	Email       string
 	PhoneNumber string
 }
 
-func (c *Contact) IsValidPhoneNumber() bool {
+func (c *Example1_Contact) IsValidPhoneNumber() bool {
 	// the process of validating phone number
 	return true // << it's just for example, it can be true | false
 }
 
-type User struct {
+type Example1_User struct {
 	ID     int
 	Name   string
 	Status int
-	Contact
+	Example1_Contact
 }
 
-func (u *User) IsUserActive() bool {
+func (u *Example1_User) IsUserActive() bool {
 	return u.Status == 1
 }
