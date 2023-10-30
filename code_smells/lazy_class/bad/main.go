@@ -1,25 +1,17 @@
 package main
 
-type Type struct {
-	// the object doesn't have any attributes
+type Contact struct {
+	Email       string
+	PhoneNumber string
 }
 
-func (t *Type) GetTypeOfWagon() string {
-	return "wagon"
+type User struct {
+	ID     int
+	Name   string
+	Status int
+	Contact
 }
 
-func (t *Type) GetTypeOfCrossover() string {
-	return "crossover"
-}
-
-type Car struct {
-	Type     Type
-	Engine   string
-	Power    int
-	MaxSpeed int
-	Color    string
-}
-
-func (c *Car) BuildCar() {
-	/* {The code of building car} */
+func (u *User) IsUserActive() bool {
+	return u.Status == 1
 }

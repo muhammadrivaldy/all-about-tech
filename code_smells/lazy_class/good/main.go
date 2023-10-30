@@ -1,18 +1,22 @@
 package main
 
-type Type string
-
-const TypeWagon Type = "wagon"
-const TypeCrossover Type = "crossover"
-
-type Car struct {
-	Type     Type
-	Engine   string
-	Power    int
-	MaxSpeed int
-	Color    string
+type Contact struct {
+	Email       string
+	PhoneNumber string
 }
 
-func (c *Car) BuildCar() {
-	/* {The code of building car} */
+func (c *Contact) IsValidPhoneNumber() bool {
+	// the process of validating phone number
+	return true // << it's just for example, it can be true | false
+}
+
+type User struct {
+	ID     int
+	Name   string
+	Status int
+	Contact
+}
+
+func (u *User) IsUserActive() bool {
+	return u.Status == 1
 }
