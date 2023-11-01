@@ -10,14 +10,6 @@ type job struct {
 	join  time.Time
 }
 
-func (j *job) getTitle() string {
-	return j.title
-}
-
-func (j *job) getJoinDate() int {
-	return j.join.Year()
-}
-
 type user struct {
 	name   string
 	addres string
@@ -28,8 +20,8 @@ func (u *user) PrintUserInformation() {
 	fmt.Printf("My name is %s and I live in %s, I have been joining this company start from %d. My title at this company is %s\n",
 		u.name,
 		u.addres,
-		u.getJoinDate(),
-		u.getTitle())
+		u.join.Year(),
+		u.title)
 }
 
 func main() {
