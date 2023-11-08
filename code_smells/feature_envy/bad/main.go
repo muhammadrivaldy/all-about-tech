@@ -2,38 +2,33 @@ package main
 
 import "fmt"
 
-type Engine struct {
-	Type string
+type salary struct {
+	day int
+	fee int
 }
 
-func (e *Engine) BuildEngine() {
-	fmt.Printf("Engine: Build an engine for %s\n", e.Type)
+type employee struct {
+	id      int
+	name    string
+	address string
 }
 
-type Car struct {
-	Engine   Engine
-	Power    int
-	MaxSpeed int
-	Color    string
-}
-
-func (c *Car) BuildCar() {
-	fmt.Println("Building a car with attributes:")
-	fmt.Printf("Power: %d\n", c.Power)
-	fmt.Printf("Max Speed: %d\n", c.MaxSpeed)
-	fmt.Printf("Color: %s\n", c.Color)
-	c.Engine.BuildEngine()
+func (e employee) printEmployeeSalary(salary salary) {
+	totalSalary := salary.day * salary.fee
+	fmt.Printf("Employee %s will receive Rp. %d for %d days\n", e.name, totalSalary, salary.day)
 }
 
 func main() {
-	car := Car{
-		Engine: Engine{
-			Type: "crossover",
-		},
-		Power:    400,
-		MaxSpeed: 250,
-		Color:    "Black",
+	employee := employee{
+		id:      1,
+		name:    "Rival",
+		address: "Jl. Pancar Kav. 1",
 	}
 
-	car.BuildCar()
+	salary := salary{
+		day: 20,
+		fee: 65000,
+	}
+
+	employee.printEmployeeSalary(salary)
 }
