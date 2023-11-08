@@ -1,48 +1,21 @@
 package main
 
 import (
-	"fmt"
-	"time"
+	"code_smells/inappropriate_intimacy/good/employee"
+	"code_smells/inappropriate_intimacy/good/salary"
 )
 
-type job struct {
-	title string
-	join  time.Time
-}
-
-func (j *job) GetTitle() string {
-	return j.title
-}
-
-func (j *job) GetJoinDate() int {
-	return j.join.Year()
-}
-
-type user struct {
-	name   string
-	addres string
-	job
-}
-
-func (u *user) PrintUserInformation() {
-	fmt.Printf("My name is %s and I live in %s, I have been joining this company start from %d. My title at this company is %s\n",
-		u.name,
-		u.addres,
-		u.GetJoinDate(),
-		u.GetTitle())
-}
-
 func main() {
-	job := job{
-		title: "Staff officer",
-		join:  time.Date(1997, 10, 10, 0, 0, 0, 0, time.Local),
+	employee := employee.Employee{
+		ID:      1,
+		Name:    "Rival",
+		Address: "Jl. Pancar Kav. 1",
 	}
 
-	user := user{
-		name:   "Rivaldy",
-		addres: "Jakarta",
-		job:    job,
+	salary := salary.Salary{
+		Day: 20,
+		Fee: 65000,
 	}
 
-	user.PrintUserInformation()
+	employee.PrintEmployeeSalary(salary)
 }
