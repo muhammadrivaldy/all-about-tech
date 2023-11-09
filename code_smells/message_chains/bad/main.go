@@ -30,8 +30,18 @@ func (o *OTPService) SendOTP(phoneNumber string, otp string) {
 type NotificationService struct{}
 
 func (n *NotificationService) SendToWhatsApp(phoneNumber string, otp string) {
+	notificationExternal := NotificationExternal{}
+	notificationExternal.SendToWhatsApp(phoneNumber, otp)
+
 	otpRepository := OTPRepository{}
 	otpRepository.SaveOTP(phoneNumber, otp)
+}
+
+type NotificationExternal struct{}
+
+func (n *NotificationExternal) SendToWhatsApp(phoneNumber string, otp string) {
+	/* {Code for sending the otp to the user's phone number} */
+	fmt.Printf("Sending otp %s via whatsapp to the phone number %s\n", otp, phoneNumber)
 }
 
 type OTPRepository struct{}
